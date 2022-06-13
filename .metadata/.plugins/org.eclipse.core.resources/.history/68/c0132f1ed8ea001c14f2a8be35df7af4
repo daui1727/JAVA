@@ -1,0 +1,14 @@
+package util;
+
+import java.sql.Connection;
+
+public class DBManager {
+	
+	public static Connection DBManager() {
+		
+
+		
+		return null;
+	}
+
+}

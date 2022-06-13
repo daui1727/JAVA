@@ -1,0 +1,9 @@
+package com.saeyan.dao;
+
+public class ProductDAO {
+	
+	private ProductDAO() {}
+	
+	private static ProductDAO instance = new ProductDAO();
+	
+}

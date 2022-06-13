@@ -1,0 +1,24 @@
+package util;
+
+import java.sql.Connection;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+
+public class DBManager {
+	
+	public static Connection DBManager() {
+		
+		Connection conn = null;
+		try {
+			Context initContext = new InitialContext();
+			
+			
+		}catch(Exception e) {
+			
+		}
+		
+		return null;
+	}
+
+}

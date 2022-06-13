@@ -114,34 +114,34 @@
 
 
 
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\web-study-09" path="/web-study-09" reloadable="true" source="org.eclipse.jst.jee.server:web-study-09">
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\web-study-09" path="/web-study-09" reloadable="true" source="org.eclipse.jst.jee.server:web-study-09">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
 				</Context>
 
 
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspEX" path="/BoardJspEX" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspEX"/>
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspEX" path="/BoardJspEX" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspEX"/>
 
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspA" path="/BoardJspA" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspA">
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspA" path="/BoardJspA" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspA">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
 				</Context>
 
 
 
 
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\A_EX_HRD" path="/A_EX_HRD" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD">
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\A_EX_HRD" path="/A_EX_HRD" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="system"/>
 				</Context>
 
 
 
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspProject" path="/BoardJspProject" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspProject"/>
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\A_EX_HRD_RE" path="/A_EX_HRD_RE" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD_RE"/>
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\A_EX_HRD_SERV" path="/A_EX_HRD_SERV" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD_SERV">
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspProject" path="/BoardJspProject" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspProject"/>
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\A_EX_HRD_RE" path="/A_EX_HRD_RE" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD_RE"/>
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\A_EX_HRD_SERV" path="/A_EX_HRD_SERV" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD_SERV">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="system"/>
 				</Context>
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\JusoTest" path="/JusoTest" reloadable="true" source="org.eclipse.jst.jee.server:JusoTest"/>
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\JusoTest" path="/JusoTest" reloadable="true" source="org.eclipse.jst.jee.server:JusoTest"/>
 					
-				<Context docBase="C:\Work\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\web-study-10" path="/web-study-10" reloadable="true" source="org.eclipse.jst.jee.server:web-study-10">
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\web-study-10" path="/web-study-10" reloadable="true" source="org.eclipse.jst.jee.server:web-study-10">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
 				</Context>
 			</Host>

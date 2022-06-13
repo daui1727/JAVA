@@ -1,0 +1,25 @@
+package com.saeyan.dao;
+
+import java.util.List;
+
+import com.saeyan.dto.ProductVO;
+
+public class ProductDAO {
+	
+	private ProductDAO() {}
+	
+	
+	// 싱글톤 객체 생성.
+	private static ProductDAO instance = new ProductDAO();
+	
+	public static ProductDAO getInstance() {
+		return instance;
+	}
+	
+	
+	public List<ProductVO> selectAllProducts(){
+		// 최근 등록한 상품 먼저 출력하기
+		
+	}
+	
+}

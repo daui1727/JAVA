@@ -1,0 +1,9 @@
+package util;
+
+public class DBManager {
+	
+	public static Connection DBManager() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
