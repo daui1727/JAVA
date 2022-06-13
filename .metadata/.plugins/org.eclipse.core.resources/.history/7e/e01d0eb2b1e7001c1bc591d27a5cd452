@@ -1,0 +1,43 @@
+package com.it.dao;
+
+import java.sql.*;
+import java.util.List;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+import com.it.dao.MemberDAO;
+import com.it.dto.MemberVO;
+
+public class MemberDAO {
+	
+	// DB 연결 전담
+	public MemberDAO() {}
+	
+	// 싱글톤 패턴으로 객체 생성.
+	private static MemberDAO instance = new MemberDAO();
+	
+	public static MemberDAO getInstance() {
+		return instance;
+	}
+	
+	// 연결부분
+	public Connection getConnection() throws Exception {
+		Context initContext = new InitialContext();
+		Context envContext  = (Context)initContext.lookup("java:/comp/env");
+		DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle");
+		Connection conn = ds.getConnection();
+		return conn;
+	}
+	
+	// 목록 출력
+	public List<MemberVO> memberListData(int page){
+		
+	}
+	
+	
+	
+	
+	
+}

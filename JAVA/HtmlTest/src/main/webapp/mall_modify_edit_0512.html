@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>회원목록 조회/수정</title>
+	</head>
+	<style>
+		
+		*{margin:0; padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none; color: #fff;}
+		
+		/* header */
+		header{height:150px; background:blue; text-align:center; font-size:40px; color: #fff; line-height:150px;}
+		
+		/* nav */
+		nav{height:60px; background:skyblue; line-height:60px;}
+		nav ul li{float: left; margin-right: 50px;}
+		nav ul li:first-child{margin-left:20px;}
+		
+		/* section */
+		section{height: 750px; background:#e9e9e9;}
+		section h1{text-align:center; line-height:160px;}
+		section table{margin:0 auto; text-align:center; border:1px solid #000;}
+		section table th{padding:5px 40px;}
+		section table td{padding:5px 200px 5px 5px;}
+		
+		section input[type="submit"]{padding:5px 10px;}
+		section button{padding:5px 10px;}
+		
+		/* footer */
+		footer{height:60px; background:blue; line-height:60px; color: #fff; text-align:center;}		
+		
+
+	</style>
+	
+<body>
+
+	<header>쇼핑몰 회원관리 ver1.0</header>
+	
+	<nav>
+		<ul>
+			<li><a href="mall_test_0511.html">회원등록</a></li>
+			<li><a href="mall_modify_0512.html">회원목록 조회/수정</a></li>
+			<li><a href="mall_check_0512.html">회원매출조회</a></li>
+			<li><a href="mall_test_0511.html">홈으로</a></li>
+		</ul>
+	</nav>
+	
+	<section>
+		<h1>홈쇼핑 회원 정보 수정</h1>
+		<form action="/create">
+			<table border="1">
+				<tr>
+					<th>회원번호</th>
+					<td><input type="text" name="usernum" required></td>
+				</tr>
+				
+				<tr>
+					<th>회원성명</th>
+					<td><input type="text" name="username"></td>
+				</tr>
+				
+				<tr>
+					<th>회원전화</th>
+					<td><input type="text"></td>
+				<tr>
+				
+				<tr>
+					<th>회원주소</th>
+					<td><input type="text"></td>
+				<tr>
+				
+				<tr>
+					<th>가입일자</th>
+					<td><input type="text"></td>
+				<tr>
+				
+				<tr>
+					<th>고객등급[A:VIP,B:일반,C:직원]</th>
+					<td><input type="text"></td>
+				<tr>
+				
+				<tr>
+					<th>도시코드</th>
+					<td><input type="text"></td>
+				<tr>
+				
+				<tr>
+					<th colspan="2"><button type="button" onclick = "alert('name만 입력해주세요.'); location.href='mall_modify_0512.html'">수정</button>&nbsp;&nbsp;&nbsp;<input type="submit" value="조회"></th>
+				<tr>
+				
+			</table>
+		</form>
+		
+	</section>
+	
+	<footer>HRDKOREA Copyrightⓒ2016 All rights reserved. Human Resources Development Service of Korea</footer>
+		
+
+</body>
+</html>

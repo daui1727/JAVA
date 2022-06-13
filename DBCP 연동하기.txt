@@ -1,0 +1,71 @@
+1. 웹 프로젝트가 위치할 폴더 내부에, lib폴더 내에 jstl.jar, ojdbc6.jar, standard.jar 파일을 넣어둔다.
+   (util 폴더에 있다.)
+
+2. 웹 프로젝트를 한번 실행.
+
+3. Servers 폴더의 tomcat - server.xml 파일의 해당 웹프로젝트를 다음과 같이 설정한다.
+
+	</context> 형식으로 바꾸고,
+	<Resource auth="Container"
+		driverClassName="oracle.jdbc.OracleDriver" maxIdle="10"
+		maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle"
+		password="tiger" type="javax.sql.DataSource"
+		url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott" />
+	context 안에 복사 붙여넣기
+
+4. 웹 프로젝트에 다음 <% %>를 추가한다.
+
+	<%@ page import="java.sql.Connection" %>
+	<%@ page import="javax.sql.DataSource" %>
+	<%@ page import="javax.naming.InitialContext" %>
+	<%@ page import="javax.naming.Context" %>
+
+	<%
+		Context initContext = new InitialContext();
+		Context envContext  = (Context)initContext.lookup("java:/comp/env");
+		DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle");
+		Connection conn = ds.getConnection();
+		out.println("DBCP 연동성공");
+	%>
+
+현재 작업은 DBCP를 사용할 때마다 설정해주어야한다.
+
+
+
+
+
+DBCP 연동 세팅 -> 01.dbcp.jsp 실행 후 -> server.xml </context> 설정
+
+--> 01.dbcp에 추가 코드 넣고 다시 실행하여 dbcp 연동 확인
+
+--> 패키지 구분하여 회원 정보를 저장하는 MemverVO 클래스 작성
+
+--> 데이터베이스에 회원 정보와 같은 순서의 member 테이블을 작성 / commit 필수
+
+--> 정보를 조회하거나 수정 추가 삭제하는 MemverDAO 클래스 작성. 
+주로, 데이터를 vo객체로 얻어오거나 vo객체에 저장된 값을 데이터베이스에 추가한다.
+싱글톤 패턴으로 정의한다.
+싱글톤은 객체를 메모리에 단 한 번만 올려놓고 시스템 전반에 걸쳐서 특정한 자원을 공유할 때 사용한다.
+
+--> MemberDAO에 싱글톤 패턴과 커넥션 메서드 정의
+
+--> 02.test로 커넥션을 얻어왔는지 테스트
+
+--> 회원 인증을 위해 아이디와 비밀번호를 받는 로그인 폼 작성
+
+--> 유효성 체크를 위한 자바스크립트 파일 member.js loginCheck() 작성
+
+--> 로그인 입력 폼을 위한 서블릿 클래스 만들기 com.saeyan.controller 패키지 내의 LoginServlet
+
+--> jsp 파일로 잘못 실행하거나 매번 직접 입력해서 들어가는 불편함을 막기 위해 index.jsp 페이지 작성
+
+--> ///////// 로그인 인증 처리를 위한 프로그래밍
+
+--> 입력받은 아이디와 암호 인증처리를 위해 데이터베이스에서 회원 정보를 탐색해보는
+userCheck()와 getMember() 메서드를 DAO에 추가한다. userCheck은 -1,0,1로, getMember는 
+해당하는 회원 정보를 MemeberVO  객체로 가져온다.
+
+-->  아이디와 암호를 입력한 후 입력된 정보를 받아 데이터베이스에 해당 정보가 저장되어있는지 확인하기 위해 서블릿 클래스 작성 --> LoginServlet에 doPost() 작성
+
+--> 
+

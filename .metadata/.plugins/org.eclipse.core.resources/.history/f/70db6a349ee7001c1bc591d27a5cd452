@@ -1,0 +1,6 @@
+function registerCheck(){
+	if(document.frm.custname.value.length == 0){
+		alert("회원성명을 입력해주세요");
+		frm.custname.focus();
+	}
+}

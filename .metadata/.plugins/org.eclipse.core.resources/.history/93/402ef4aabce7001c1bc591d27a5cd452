@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원매출조회</title>
+<style type="text/css">
+	
+	*{margin:0; padding:0;}
+	li{list-style:none;}
+	a{text-decoration:none;}
+	
+	header,nav,section,footer{width:1000px; margin:0 auto;}
+	
+	header{height:100px; line-height:100px; background:#3557d5;}
+	header h1{text-align:center; color:#fff;}
+	
+	nav{height: 40px; line-height:40px; background:#8f8ce7;}
+	nav ul{float:left;}
+	nav ul li{float:left; margin:0 50px;}
+	nav ul li a{color: #fff;}
+	
+	section{height: 700px; background:#e5e5e5;}
+	section h2{text-align:center; padding:40px 0;}
+	section table{margin: 0 auto; width:700px;}
+	section tr{height:45px; text-align:center;}
+	
+	footer{height: 50px; line-height:50px; background:#3665b5;}
+	footer h2{color: #fff; text-align:center; font-size:12px;}
+	
+</style>
+</head>
+<body>
+
+	<%@ include file="header.jsp" %>
+	
+	<section>
+		<h2>회원 매출 조회</h2>
+		<table border="1">
+			<tr>
+				<th>회원번호</th>
+				<th>회원성명</th>
+				<th>고객등급</th>
+				<th>매출</th>
+			</tr>
+			<tr>
+				<td><input type="text" size="10"></td>
+				<td><input type="text" size="10"></td>
+				<td><input type="text" size="10"></td>
+				<td><input type="text" size="10"></td>
+			</tr>
+		</table>
+	</section>
+	
+	<footer>
+		<h2>HRDKOREA Copyright©2016 All rights reseved. Human Resources Devlopment Service of Korea</h2>
+	</footer>
+
+</body>
+</html>

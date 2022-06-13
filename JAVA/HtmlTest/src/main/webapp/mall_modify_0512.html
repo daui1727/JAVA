@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>회원목록 조회/수정</title>
+	</head>
+	<style>
+		
+		*{margin:0; padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none; color: #fff;}
+		
+		/* header */
+		header{height:150px; background:blue; text-align:center; font-size:40px; color: #fff; line-height:150px;}
+		
+		/* nav */
+		nav{height:60px; background:skyblue; line-height:60px;}
+		nav ul li{float: left; margin-right: 50px;}
+		nav ul li:first-child{margin-left:20px;}
+		
+		/* section */
+		section{height: 750px; background:#e9e9e9;}
+		section h1{text-align:center; line-height:160px;}
+		section table{margin:0 auto; text-align:center; border:1px solid #000;}
+		section table th,td{padding:5px 50px;}
+		section tr .go-modify:hover{background:skyblue;}
+		section tr .go-modify:hover a{color: #000;}
+		
+		/* footer */
+		footer{height:60px; background:blue; line-height:60px; color: #fff; text-align:center;}		
+		
+
+	</style>
+	
+<body>
+
+	<header>쇼핑몰 회원관리 ver1.0</header>
+	
+	<nav>
+		<ul>
+			<li><a href="mall_test_0511.html">회원등록</a></li>
+			<li><a href="mall_modify_0512.html">회원목록 조회/수정</a></li>
+			<li><a href="mall_check_0512.html">회원매출조회</a></li>
+			<li><a href="mall_test_0511.html">홈으로</a></li>
+		</ul>
+	</nav>
+	
+	<section>
+		<h1>회원목록 조회 / 수정 <small>(회원 번호를 클릭해주세요)</small></h1>
+		<table border="1">
+			<tr>
+				<th>회원번호</th>
+				<th>회원성명</th>
+				<th>전화번호</th>
+				<th>주소</th>
+				<th>가입일자</th>
+				<th>고객등급</th>
+				<th>거주지역</th>
+			</tr>
+			
+			<tr>
+				<td class="go-modify"><a href="mall_modify_edit_0512.html">100001</a></td>
+				<td>김행복</td>
+				<td>010-1111-2222</td>
+				<td>서울 동대문구 휘경동</td>
+				<td>2015-12-02</td>
+				<td>VIP</td>
+				<td>01</td>
+			</tr>
+			
+			<tr>
+				<td class="go-modify"><a href="mall_modify_edit_0512.html">100002</a></td>
+				<td>이축복</td>
+				<td>010-1111-3333</td>
+				<td>서울 동대문구 휘경동</td>
+				<td>2015-12-06</td>
+				<td>일반</td>
+				<td>01</td>
+			</tr>
+			
+			<tr>
+				<td class="go-modify"><a href="mall_modify_edit_0512.html">100003</a></td>
+				<td>장믿음</td>
+				<td>010-1111-4444</td>
+				<td>울릉군 울릉읍 독도 1리</td>
+				<td>2015-10-01</td>
+				<td>일반</td>
+				<td>30</td>
+			</tr>
+			
+			<tr>
+				<td class="go-modify"><a href="mall_modify_edit_0512.html">100004</a></td>
+				<td>최사랑</td>
+				<td>010-1111-5555</td>
+				<td>울릉군 울릉읍 독도 2리</td>
+				<td>2015-11-13</td>
+				<td>VIP</td>
+				<td>30</td>
+			</tr>
+			
+			<tr>
+				<td class="go-modify"><a href="mall_modify_edit_0512.html">100005</a></td>
+				<td>진평화</td>
+				<td>010-1111-6666</td>
+				<td>제주도 제주시 소나무골</td>
+				<td>2015-12-13</td>
+				<td>일반</td>
+				<td>60</td>
+			</tr>
+			
+			<tr>
+				<td class="go-modify"><a href="mall_modify_edit_0512.html">100006</a></td>
+				<td>진평화</td>
+				<td>010-1111-7777</td>
+				<td>제주도 제주시 감나무골</td>
+				<td>2015-12-23</td>
+				<td>직원</td>
+				<td>60</td>
+			</tr>
+			
+			
+		</table>
+		
+	</section>
+	
+	<footer>HRDKOREA Copyrightⓒ2016 All rights reserved. Human Resources Development Service of Korea</footer>
+		
+
+</body>
+</html>

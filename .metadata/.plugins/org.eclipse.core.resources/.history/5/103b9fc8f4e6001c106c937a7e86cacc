@@ -1,0 +1,21 @@
+package com.saeyan.dao;
+
+import javax.naming.InitialContext;
+
+public class MemberDAO {
+	
+	// DB 연결 전담
+	public MemberDAO() {}
+
+	// 싱글톤 패턴으로 객체 생성.
+	private static MemberDAO instance = new MemberDAO();
+	
+	public static MemberDAO getInstance() {
+		return instance;
+	}
+	
+	public Connection getConnection() {
+		Context initContext = new InitialContext();
+	}
+	
+}

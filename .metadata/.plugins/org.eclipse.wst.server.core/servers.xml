@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" com.springsource.tcserver.asf="false" com.springsource.tcserver.name="base-instance" com.springsource.tcserver.version="9.0.33.A.RELEASE" configuration-id="/Servers/VMware tc Server Developer Edition v4.1-config" deployDir="wtpwebapps" hostname="localhost" id="VMware tc Server Developer Edition v4.1" id-set="true" name="VMware tc Server Developer Edition v4.1" runtime-id="VMware tc Server Developer Edition (Runtime) v4.1" saveSeparateContextFiles="true" server-type="com.vmware.server.tc.90" server-type-id="com.vmware.server.tc.90" start-timeout="120" stop-timeout="15" testEnvironment="false" timestamp="2">
+    <list key="modules"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="30">
+    <list key="modules" value0="web-study-09::org.eclipse.jst.jee.server:web-study-09::jst.web::4.0" value1="BoardJspEX::org.eclipse.jst.jee.server:BoardJspEX::jst.web::4.0" value2="BoardJspA::org.eclipse.jst.jee.server:BoardJspA::jst.web::4.0" value3="A_EX_HRD::org.eclipse.jst.jee.server:A_EX_HRD::jst.web::4.0" value4="BoardJspProject::org.eclipse.jst.jee.server:BoardJspProject::jst.web::4.0" value5="A_EX_HRD_RE::org.eclipse.jst.jee.server:A_EX_HRD_RE::jst.web::4.0" value6="A_EX_HRD_SERV::org.eclipse.jst.jee.server:A_EX_HRD_SERV::jst.web::4.0" value7="JusoTest::org.eclipse.jst.jee.server:JusoTest::jst.web::4.0" value8="web-study-10::org.eclipse.jst.jee.server:web-study-10::jst.web::4.0"/>
+  </server>
+</servers>

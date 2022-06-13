@@ -1,0 +1,7 @@
+package com.saeyan.dao;
+
+public class MemberDAO {
+	
+	// DB 연결 전담
+
+}

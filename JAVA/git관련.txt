@@ -1,0 +1,20 @@
+git init
+
+git config --global user.email "~ @gmail.com"
+
+git config --global user.name "gitTest"
+
+git add .   
+
+git commit -m "1회 테스트"
+
+new  눌러서 폴더 생성
+
+git remote add origin
+https://github.com/daui1727/cafe.git
+
+git push origin master
+
+다른 pc에서 폴더 생성 git bash
+
+git clone https://github.com/daui1727/cafe.git .

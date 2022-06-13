@@ -1,0 +1,25 @@
+package com.it.dao;
+
+public class BoardDAO {
+	
+	public BoardDAO() {}
+	
+	public boolean boardDelete(int no) {
+		boolean chk = false;
+		
+		try {
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(conn != null) conn.close();
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return chk;
+	}
+	
+}

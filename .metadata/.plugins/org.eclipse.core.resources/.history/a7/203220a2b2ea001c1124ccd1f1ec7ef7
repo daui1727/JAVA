@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주소창 띄우기</title>
+</head>
+
+<body>
+
+	<form action="join" method="post" name="frm">
+		아이디 : <input type="text" name="id" required><br>
+		비밀번호 : <input type="password" name="pwd" required="required" readonly="readonly"><br>
+		주소 : <input type="text" id="address" name="address" size="150" required="required" readonly><br>
+		<input type="button" value="주소검색"><br>
+		<input type="submit" value="전송">
+	</form>
+
+	<!-- port 확인. 예제 작성 땐 8181이였음.
+		juso.go.kr - 주소기반산업지원서비스 - api 신청하기
+		
+	 -->
+
+</body>
+</html>

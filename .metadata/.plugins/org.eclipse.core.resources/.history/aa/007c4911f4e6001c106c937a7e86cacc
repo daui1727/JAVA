@@ -1,0 +1,9 @@
+package com.saeyan.dto;
+
+public class MemberVO {
+	
+	private String name;
+	private String userid;
+	
+
+}

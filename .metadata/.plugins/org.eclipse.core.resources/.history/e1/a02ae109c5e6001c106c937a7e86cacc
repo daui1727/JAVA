@@ -1,0 +1,20 @@
+package com.it.dao;
+
+/*
+create table jspBoard(
+	no int auto_increment,
+   name varchar(34) not null,
+   subject varchar(1000) not null,
+   content text not null,
+   pwd varchar(10) not null,
+   regdate datetime,
+   hit int default 0,
+   primary key(no)
+);
+*/
+
+public class BoardVO {
+	
+	
+
+}

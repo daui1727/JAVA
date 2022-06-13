@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>마우스 올리면 나타나는 드롭다운 만들어보기</title>
+	<style>
+	
+		.dropdown{position:relative; display:inline-block;}
+		.dropdown-content{
+			display:none;
+			position:absolute;
+			background-color:#f9f9f9;
+			min-width:160px;
+			padding:8px;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+		.dropdown:hover .dropdown-content{display:block;}
+	
+	</style>
+</head>
+
+<body>
+
+	
+	<h1>드롭다운 효과</h1>
+	<div class="dropdown">
+		<span>여기에 마우스를 올려보세요!</span>
+		<div class="dropdown-content">
+			<p>마우스를 올려야 나타나는 div 요소입니다!</p>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
