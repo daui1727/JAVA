@@ -44,3 +44,12 @@ DBCP -
 	password="tiger" type="javax.sql.DataSource"
 	url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott" />
 </Context>
+
+
+*특징
+cos.jar(version:cos-22.05.zip)를 통한 파일 upload
+
+
+
+
+
