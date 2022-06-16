@@ -1,5 +1,0 @@
-function registerCheck(){
-	if(document.frm.custno.value.length == 0){
-		
-	}
-}

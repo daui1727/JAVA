@@ -5,7 +5,69 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-06-14T07:00:00Z</updated>
+  <updated>2022-06-16T00:08:00Z</updated>
+  <entry>
+    <title>CVE report published for Spring Cloud Function</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/06/15/cve-report-published-for-spring-cloud-function" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Oleg Zhurakousky</name>
+    </author>
+    <id>tag:spring.io,2022-06-15:4828</id>
+    <updated>2022-06-16T00:08:00Z</updated>
+    <content type="html">&lt;p&gt;We have released Spring Cloud Function &lt;a href="https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-function-context/3.2.6/"&gt;3.2.6&lt;/a&gt; to address the following CVE report.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/security/cve-2022-22979"&gt;CVE-2202-22979: Spring Cloud Function Dos Vulnerability &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please review the information in the CVE report and upgrade immediately.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tools 4.15.0 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/06/15/spring-tools-4-15-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2022-06-15:4829</id>
+    <updated>2022-06-15T18:00:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 4.15.0 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#major-changes-to-the-spring-tools-4-for-eclipse-distribution" class="anchor" name="major-changes-to-the-spring-tools-4-for-eclipse-distribution"&gt;&lt;/a&gt;major changes to the Spring Tools 4 for Eclipse distribution&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;updated to Eclipse 2022-06 release (&lt;a href="https://www.eclipse.org/eclipseide/2022-06/"&gt;new and noteworthy&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;&lt;a href="#fixes-and-improvements" class="anchor" name="fixes-and-improvements"&gt;&lt;/a&gt;fixes and improvements&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: vscode-sts: an edge case of workspace symbol for @PutMapping (&lt;a href="https://github.com/spring-projects/sts4/issues/781"&gt;#781&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(VSCode)&lt;/em&gt; fixed: Failed to refresh live data from process 12704 - com.xxxx.xx.xxx.BillingServiceApp after retries: 10 (&lt;a href="https://github.com/spring-projects/sts4/issues/748"&gt;#748&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: The Spring Boot Language Server is not immediately shutdown after closing the last open editor to avoid the need to restart the server when you open the next file (related to &lt;a href="https://github.com/spring-projects/sts4/issues/568"&gt;#568&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: When opening symbols, open the compilation unit from the relevant project (&lt;a href="https://github.com/spring-projects/sts4/issues/769"&gt;#769&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: The issue with the internal web browser not being able to open HTTP URLs on macOS got fixed. If you prefer to use the internal browser instead of an external one, you can make that switch in the preferences.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; fixed: Update Concourse registry-image schema (&lt;a href="https://github.com/spring-projects/sts4/issues/777"&gt;#777&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; fixed: Add registry_mirror &amp;amp; across as a known properties (&lt;a href="https://github.com/spring-projects/sts4/issues/752"&gt;#752&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2022-06-15-4150-release-incl-language-servers-version-1340"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2022-06-15-4150-release-incl-language-servers-version-1340&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Tools 4.15.1 is scheduled to be released in early August 2022.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 5.3.21 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/06/15/spring-framework-5-3-21-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>St?phane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2022-06-15:4827</id>
+    <updated>2022-06-15T09:04:18Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.21&lt;/code&gt; is available now.&lt;/p&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;5.3.21&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.21"&gt;22 fixes and improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.21/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tips: Learn Spring for GraphQL (parts 5 and 6 of an ongoing series)</title>
     <link rel="alternate" href="https://spring.io/blog/2022/06/14/spring-tips-learn-spring-for-graphql-parts-5-and-6-of-an-ongoing-series" />
@@ -576,308 +638,6 @@ dependencyManagement {&#xD;
     <updated>2022-05-26T15:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, Josh Long talks to Spring Boot and Spring Cloud luminary, the good Dr. @David_Syer, about the latest and greatest on Spring and Kubernetes &lt;/p&gt;
 &lt;iframe title="The good Dr. David Syer on the new and novel in Spring and Kubernetes " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=87fyr-1236e3b-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Authorization Server 0.3.0 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/25/spring-authorization-server-0-3-0-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Steve Riesenberg</name>
-    </author>
-    <id>tag:spring.io,2022-05-25:4809</id>
-    <updated>2022-05-25T16:00:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team and everyone who has contributed, it is my pleasure to announce the general availability of Spring Authorization Server 0.3.0.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can download it from Maven Central by using the module coordinates:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;implementation 'org.springframework.security:spring-security-oauth2-authorization-server:0.3.0'&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-authorization-server/releases/tag/0.3.0"&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;With this release, you can view the initial version of the &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/index.html"&gt;reference documentation&lt;/a&gt; and the new &lt;a href="https://spring.io/projects/spring-authorization-server"&gt;project page on spring.io&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html"&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href="https://github.com/spring-projects/spring-authorization-server/tree/main/samples"&gt;samples&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We would love to gather your feedback as we strive to improve and build upon this release.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; | &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Preparing for Spring Boot 3.0</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/24/preparing-for-spring-boot-3-0" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2022-05-19:4805</id>
-    <updated>2022-05-24T16:00:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Boot 2.0 was the first release in the 2.x line and was published on Feburary 28th 2018.
-We&amp;#8217;ve just released Spring Boot 2.7 which means that, so far, we&amp;#8217;ve been maintaining the 2.x line for just over 4 years.
-In total we&amp;#8217;ve published 95 distinct releases over that timeframe!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The entire Spring team, and many in our community of contributors, are now preparing for the next generation of Spring.
-We are planning to release Spring Boot 3.0 in November 2022.
-This next major revision will be based on Spring Framework 6.0 and will require Java 17 or above.
-It will also be the first version of Spring Boot that makes use of Jakarta EE 9 APIs (&lt;code&gt;jakarta.*&lt;/code&gt;)  instead of EE 8 (&lt;code&gt;javax.*&lt;/code&gt;).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The next six months offer an ideal opportunity to prepare your own projects for this major release.
-In this blog post we&amp;#8217;ll cover some of the things that you can do &lt;em&gt;today&lt;/em&gt; to make any future migration as painless as possible.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="upgrade-to-java-17"&gt;&lt;a class="anchor" href="#upgrade-to-java-17"&gt;&lt;/a&gt;Upgrade to Java 17&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Boot 3.0 will require Java 17, but you don&amp;#8217;t need to wait until that release to upgrade to the latest LTS Java version.
-Any recent Spring Boot 2.x release will work really well with Java 17.
-You can also make use of Java 17 features (such as records) in your own codebases.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We highly recommend that you upgrade your JDK today if at all possible.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="upgrade-to-the-latest-spring-boot-2-7-x"&gt;&lt;a class="anchor" href="#upgrade-to-the-latest-spring-boot-2-7-x"&gt;&lt;/a&gt;Upgrade to the Latest Spring Boot 2.7.x&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;If you&amp;#8217;re currently using an older version of Spring Boot 2.x, we highly recommend that you upgrade to Spring Boot 2.7.
-When Spring Boot 3.0 is released we will be providing a migration guide, but it will assume that you&amp;#8217;re migrating from Spring Boot 2.7 and not an earlier version.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Upgrading instructions are always provided in our release notes.
-For example, if you are upgrading from Spring Boot 2.6 to Spring Boot 2.7, you can follow &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.7-Release-Notes#upgrading-from-spring-boot-26"&gt;this section&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;If you&amp;#8217;re upgrading from Spring Boot 2.5 or earlier, we don&amp;#8217;t recommend skipping releases.
-It&amp;#8217;s often easier to upgrade in steps (e.g. 2.5 &amp;#8594; 2.6 &amp;#8594; 2.7) rather than trying to upgrade directly from 2.5 &amp;#8594; 2.7.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="check-for-calls-to-deprecated-code"&gt;&lt;a class="anchor" href="#check-for-calls-to-deprecated-code"&gt;&lt;/a&gt;Check for Calls to Deprecated Code&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As Spring Boot evolves we will often deprecate methods or classes and provide replacements.
-We typically provide a 12 month overlap, after which deprecated code is removed.
-You can find details &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Deprecations"&gt;of this policy on our wiki&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Boot 3.0 will remove all deprecated code, so we recommend that you check your existing code is not relying on any deprecated methods.
-It&amp;#8217;s worth considering using the &lt;code&gt;-Werror&lt;/code&gt; Java compiler option to fail your build if deprecation warnings are reported.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="migrate-from-legacy-application-properties-and-application-yaml-processing"&gt;&lt;a class="anchor" href="#migrate-from-legacy-application-properties-and-application-yaml-processing"&gt;&lt;/a&gt;Migrate from Legacy application.properties and application.yaml Processing&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Boot 2.4 changed the way that &lt;code&gt;application.properties&lt;/code&gt; and &lt;code&gt;application.yaml&lt;/code&gt; files were loaded.
-Most users didn&amp;#8217;t notice the change, but a few projects may have set the &lt;code&gt;spring.config.use-legacy-processing&lt;/code&gt; property to &lt;code&gt;true&lt;/code&gt; to restore the old behavior.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The legacy processing support will not be coming to Spring Boot 3.0 so you should check that your project doesn&amp;#8217;t set &lt;code&gt;spring.config.use-legacy-processing&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="use-spring-mvcs-pathpatternparser"&gt;&lt;a class="anchor" href="#use-spring-mvcs-pathpatternparser"&gt;&lt;/a&gt;Use Spring MVC&amp;#8217;s PathPatternParser&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring MVC offers two ways to parse patterns.
-As of Spring Boot 2.6, the &lt;code&gt;PathPatternParser&lt;/code&gt; is used by default.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Some applications may have manually switched back to the &lt;code&gt;AntPathMatcher&lt;/code&gt; implementation by setting the &lt;code&gt;spring.mvc.pathmatch.matching-strategy&lt;/code&gt; property.
-Although this will continue to work in Spring Boot 3.0, we recommend using the &lt;code&gt;PathPatternParser&lt;/code&gt; if at all possible since it provides better performance.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="check-if-third-party-projects-have-jakarta-ee-9-compatible-releases"&gt;&lt;a class="anchor" href="#check-if-third-party-projects-have-jakarta-ee-9-compatible-releases"&gt;&lt;/a&gt;Check if Third-party Projects Have Jakarta EE 9 Compatible Releases&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Jakarta EE 9 a new top-level &lt;code&gt;jakarta&lt;/code&gt; package, replacing EE 8&amp;#8217;s &lt;code&gt;javax&lt;/code&gt; top-level package.
-For example, the Servlet specification in Jakarta EE 8 uses a &lt;code&gt;javax.servlet&lt;/code&gt; package but this has changed to &lt;code&gt;jakarta.servlet&lt;/code&gt; in EE 9.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Generally speaking, it&amp;#8217;s not possible to mix Java EE and Jakarta EE APIs in the same project.
-You need to ensure that your own code, as well as all third-party libraries are using &lt;code&gt;jakarta.*&lt;/code&gt; package imports.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The good news is that most well-maintained libraries are producing Jakarta EE 9 compatible variants.
-For example Hibernate, Thymeleaf, Tomcat, Jetty and Undertow have all done so already.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We recommend that you take some time to check that any third-party libraries that you use that integrate with Jakarta EE and check that they have EE 9 compatible variants.
-The most common problems we&amp;#8217;ve found are with projects that import Servlet APIs.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="check-if-third-party-projects-have-updated-spring-compatible-releases"&gt;&lt;a class="anchor" href="#check-if-third-party-projects-have-updated-spring-compatible-releases"&gt;&lt;/a&gt;Check if Third-party Projects have Updated Spring Compatible Releases&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Framework 6.0 will not be binary compatible with the previous generation.
-If you are making use of third-party jars that offer Spring integration, you should check that they are planning Spring Framework 6 compatible releases.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="try-the-spring-boot-milestones"&gt;&lt;a class="anchor" href="#try-the-spring-boot-milestones"&gt;&lt;/a&gt;Try the Spring Boot Milestones&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Although we don&amp;#8217;t recommend it for production, you can try Spring Boot 3.0 milestones today to see how hard it will be to migrate your project.
-Trying the milestones on a branch of your code is a great way to preempt any potential problems.
-They are available from &lt;a href="https://repo.spring.io/milestone" class="bare"&gt;https://repo.spring.io/milestone&lt;/a&gt;.
-Creating a project on &lt;a href="https://start.spring.io" class="bare"&gt;https://start.spring.io&lt;/a&gt; and selecting the latest 3.0 milestone will include the necessary repositories in the build configuration.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We&amp;#8217;re always interested in feedback and we&amp;#8217;re very happy when bugs get identified before we release the GA version.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can raise issues at &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;github.com/spring-projects/spring-boot/issues&lt;/a&gt; (make sure you tell us the version of Spring Boot that you&amp;#8217;re using).&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="consider-commercial-support"&gt;&lt;a class="anchor" href="#consider-commercial-support"&gt;&lt;/a&gt;Consider Commercial Support&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Boot 2.7 is the last planned release in the 2.x line.
-We&amp;#8217;ve extended our open source support for this release by an additional 6 months until November 2023.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In addition, commercial support for Spring Boot 2.7 has also been extended and is available until February 2025.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can find project support details at &lt;a href="https://spring.io/projects/spring-boot#support"&gt;spring.io/projects/spring-boot&lt;/a&gt;.
-Details of commercial support can be found at &lt;a href="https://tanzu.vmware.com/spring-runtime"&gt;tanzu.vmware.com/spring-runtime&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Any release triggered by a commercial support request will always be published as open source so commercial customers also help the open source community.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Azure Spring Apps Enterprise is now generally available</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/24/azure-spring-apps-enterprise-is-now-generally-available" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-05-24:4808</id>
-    <updated>2022-05-24T15:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! This is a guest post by Julia Liuson, President, Developer Division, Microsoft &lt;/p&gt;&lt;h2&gt;&lt;a href="#azure-spring-cloud-is-now-azure-spring-apps" class="anchor" name="azure-spring-cloud-is-now-azure-spring-apps"&gt;&lt;/a&gt;Azure Spring Cloud is now Azure Spring Apps&lt;/h2&gt;
-&lt;p&gt;We launched Azure Spring Cloud with VMware in 2019 to solve common challenges developers, IT operators, and DevOps teams face when running Spring Boot applications at scale. Since then we¡¯ve helped many customers adopt the service including &lt;a href="https://youtu.be/wdwjqXTFFZ0"&gt;Bosch&lt;/a&gt;, &lt;a href="https://devblogs.microsoft.com/java/deploy-spring-boot-applications-by-leveraging-enterprise-best-practices/"&gt;Digital Realty&lt;/a&gt;, &lt;a href="https://mybuild.microsoft.com/en-US/sessions/71ed338e-5f85-44d8-a225-6210fdbdd06d?source=sessions"&gt;FedEx&lt;/a&gt;, &lt;a href="https://www.youtube.com/watch?v=EfgiW6xJseM"&gt;Kroger&lt;/a&gt;, &lt;a href="https://customers.microsoft.com/en-us/story/1449469395802117015-liantis-professional-services-scales-hr-affairs-applications-azure-spring-cloud"&gt;Liantis&lt;/a&gt;,?&lt;a href="https://www.youtube.com/watch?v=wdwjqXTFFZ0"&gt;Morgan Stanley&lt;/a&gt;, &lt;a href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/secure-communications-end-to-end-for-spring-boot-apps-in-zero/ba-p/3033438"&gt;National Life&lt;/a&gt;, &lt;a href="https://customers.microsoft.com/en-us/story/1388620728739667057-raleys-uses-azure-spring-cloud-to-optimize-scale-and-drive-innovation"&gt;Raley¡¯s&lt;/a&gt;, and &lt;a href="https://customers.microsoft.com/en-us/story/1358540087031302788-swiss-re-accelerates-java-app-modernization-using-azure-spring-cloud"&gt;Swiss Re&lt;/a&gt;. They value the fully managed infrastructure of Azure Spring Cloud that lets them focus on their apps, while the service manages dynamic scaling, security patching, out-of-the-box instrumentation for monitoring, and more. Through customer feedback. we have expanded the capabilities of the service, including the Enterprise tier that we announced in preview at SpringOne 2021. Azure Spring Cloud is a fully-featured platform for all types of Spring applications, and to better reflect this the service is now Azure Spring Apps.&lt;/p&gt;
-&lt;br/&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&amp;ldquo;FedEx launched a Global Delivery Prediction Platform that dynamically predicts estimated time of arrival on more than 16 million shipments a day. We integrate these machine learning-based insights back into our core systems to optimize our operations and to give our customers greater visibility than ever before. Exposure and consumption of these insights is critical, and we chose Azure Spring Apps as our principal compute for high-volume processing because of its ease of use, scale, and integrations into the Azure ecosystem. Our collaboration with Microsoft and VMware has delivered an amazing service for fast-moving Java teams to deliver impactful solutions for our customers.&amp;rdquo; - Tony Kreager, Senior Vice President, Data Engineering &amp;amp; Data Science, &lt;a href="https://www.fedex.com/en-us/home.html"&gt;FedEx Dataworks&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;br/&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;¡°Azure Spring Apps is at the center of our new API platform and provides us a simple way to get our Spring applications to production quickly and securely. We had been searching for a long time for an off-the-shelf solution that would fit our requirements before Microsoft and VMware finally got together to launch this solution. Azure Spring Apps allows us to concentrate on the business logic of our applications and takes away the complexity of delivering those applications to our customers.¡± &amp;ndash; Claus Lund, Senior Infrastructure Engineering Lead, &lt;a href="https://www.nationallife.com/"&gt;National Life Group&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;br/&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Azure Spring Apps is a critical component of Digital Realty API and Portal offering. Azure Spring Apps managed offering allowed us to rapidly deploy microservice applications and reduce time to market. We have migrated legacy applications to microservices based architecture in a record time. Coupled with the REST APIs that we have developed, we have a truly powerful, resilient, and global platform. We are very excited to see the continued development of the offering and collaboration between Microsoft and VMware and how they benefit our teams and Java developers everywhere. &amp;ndash; Raj Sriramoju, Director API Engineering, &lt;a href="https://www.digitalrealty.com/"&gt;Digital Realty Trust&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#azure-spring-apps-enterprise-tier-is-now-generally-available" class="anchor" name="azure-spring-apps-enterprise-tier-is-now-generally-available"&gt;&lt;/a&gt;Azure Spring Apps Enterprise tier is now generally available&lt;/h2&gt;
-&lt;p&gt;Many organizations are running thousands of Spring Boot applications on-premises and need advanced capabilities to accelerate their Spring modernization projects. Based on our learnings from customer engagements, we built a new Azure Spring Apps tier?&lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/quickstart-provision-service-instance-enterprise?tabs=azure-portal"&gt;Enterprise&lt;/a&gt; ?that we announced at &lt;a href="https://azure.microsoft.com/en-us/blog/announcing-azure-spring-cloud-enterprise-fully-managed-vmware-tanzu-components-and-configurability-for-spring-boot-apps/"&gt;SpringOne 2021&lt;/a&gt;. The Enterprise tier includes commercially supported Spring runtime components to help enterprise customers ship faster and unlock Spring¡¯s full potential. We are thankful to many customers and partners who participated in the previews and shared their learnings, and we are excited to announce that the Azure Spring Apps Enterprise tier will be generally available in early June 2022.&lt;/p&gt;
-&lt;p&gt;The Enterprise tier represents our continued collaboration with VMware to combine Microsoft¡¯s cloud platform expertise with VMware¡¯s innovative &lt;a href="https://tanzu.vmware.com/tanzu"&gt;Tanzu&lt;/a&gt; portfolio. We¡¯re also committed to making it an application platform where you can deploy polyglot applications that are inherently portable across any Azure service, any cloud, or any on-premises system. &lt;/p&gt;
-&lt;p&gt;With Azure Spring Apps Enterprise, you gain productivity and access to Spring experts for Spring app development and deployments. Azure Spring Apps Enterprise builds on top of all the features available in the Standard tier, including the ability to leverage the broader Azure ecosystem to supercharge your Spring Boot applications.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CLvtz8SkrMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;._Azure Spring Apps Enterprise tier selection in the Azure Portal_&lt;/p&gt;
-&lt;p&gt;Azure Spring Apps Enterprise is now available across 24 Azure Regions in Africa, Asia-Pacific, Australia, Americas, Europe, China, India, Japan, Korea, and the United Arab Emirates. We are in the process of expanding the service to multiple newer European Regions in Switzerland and Germany.&lt;/p&gt;&lt;h2&gt;&lt;a href="#1-ship-faster" class="anchor" name="1-ship-faster"&gt;&lt;/a&gt;1 - Ship Faster&lt;/h2&gt;&lt;h3&gt;&lt;a href="#deploy-and-manage-spring-and-polyglot-applications" class="anchor" name="deploy-and-manage-spring-and-polyglot-applications"&gt;&lt;/a&gt;Deploy and manage Spring and polyglot applications&lt;/h3&gt;
-&lt;p&gt;The &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-enterprise-build-service"&gt;fully managed&lt;/a&gt; VMware Tanzu Build Service in the Enterprise tier automates container creation, management, and governance at enterprise scale using open source &lt;a href="https://buildpacks.io/"&gt;Cloud Native Buildpacks&lt;/a&gt; and commercial &lt;a href="https://docs.pivotal.io/tanzu-buildpacks/"&gt;VMware Tanzu Buildpacks&lt;/a&gt;. These Buildpacks make it easier to &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-enterprise-deploy-non-java-apps?"&gt;build&lt;/a&gt; Spring, Java, NodeJS, Python, Go, and .NET Core applications and configure application performance monitoring agents such as Application Insights, New Relic, Dynatrace, AppDynamics, and Elastic.&lt;/p&gt;&lt;h3&gt;&lt;a href="#effortlessly-route-client-requests-to-applications" class="anchor" name="effortlessly-route-client-requests-to-applications"&gt;&lt;/a&gt;Effortlessly route client requests to applications&lt;/h3&gt;
-&lt;p&gt;You can easily manage and discover request routes and APIs exposed by applications using the &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-use-enterprise-spring-cloud-gateway"&gt;fully managed&lt;/a&gt; Spring Cloud Gateway for VMware Tanzu and API portal for VMware Tanzu.&lt;/p&gt;
-&lt;p&gt;Spring Cloud Gateway for Tanzu effectively routes diverse client requests to applications in Azure Spring Apps, Azure, and or on-premises, and addresses cross-cutting considerations for applications behind the Gateway such as securing, routing, rate limiting, caching, monitoring, resiliency, and hiding applications. &lt;/p&gt;
-&lt;p&gt;API portal for VMware Tanzu provides API consumers the ability to find and view API route details exposed by Spring Cloud Gateway for Tanzu and test API requests.&lt;/p&gt;
-&lt;img src = "https://raw.githubusercontent.com/joshlong/blog-images/master/azure-spring-apps-enterprise-generally-available/API-portal.jpg"/&gt;
-&lt;p&gt;&lt;em&gt;Figure 1 ? API portal for VMware Tanzu visualizes APIs that are accessible from Spring Cloud Gateway for Tanzu and other OpenAPI-compliant sources&lt;/em&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#flexible-and-configurable-vmware-tanzu-components" class="anchor" name="flexible-and-configurable-vmware-tanzu-components"&gt;&lt;/a&gt;Flexible and configurable VMware Tanzu components&lt;/h3&gt;
-&lt;p&gt;With the Azure Spring Apps Enterprise tier, customers can use fully managed VMware Tanzu components on Azure. Customers can select which VMware Tanzu components they want to use in their environment during Enterprise instance creation. Tanzu Build Service, Spring Cloud Gateway for Tanzu, API portal for VMware Tanzu, Application Configuration Service for VMware Tanzu, and VMware Tanzu Service Registry are currently available. &lt;/p&gt;
-&lt;p&gt;VMware Tanzu components deliver increased value to customers to:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Grow your enterprise grade application portfolio from a few applications to thousands with end-to-end observability while delegating operational complexity to Microsoft and VMware&lt;/li&gt;
-  &lt;li&gt;Lift and shift Spring applications across Azure Spring Apps and any other compute environment&lt;/li&gt;
-  &lt;li&gt;Control your build dependencies, deploy polyglot applications, and deploy Spring Cloud middleware components as needed&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Microsoft and VMware will continue to add more enterprise-grade features, including Tanzu components such as Application Live View for VMware Tanzu, VMware Tanzu Application Accelerator for VMware Tanzu, and Spring Cloud Data Flow for VMware Tanzu (The Azure Spring Apps Enterprise roadmap is not confirmed and is subject to change).&lt;/p&gt;&lt;h2&gt;&lt;a href="#2-unlock-spring-s-full-potential-with-long-term-support-lts" class="anchor" name="2-unlock-spring-s-full-potential-with-long-term-support-lts"&gt;&lt;/a&gt;2 - Unlock Spring¡¯s full potential with Long-Term Support (LTS)&lt;/h2&gt;
-&lt;p&gt;Enterprise tier includes VMware Spring Runtime Support for application development and deployments. This support gives you access to Spring experts, enabling you to unlock the full potential of the Spring ecosystem and develop and deploy applications faster.&lt;/p&gt;
-&lt;p&gt;Typically, open-source Spring project minor releases are supported for a minimum of 12 months from the date of the initial release of these projects. In Azure Spring Apps Enterprise, Spring project minor releases will receive commercial support for a minimum of 24 months* from the date of initial release through the VMware Spring Runtime Support entitlement. This extended support ensures the security and stability of your Spring application portfolio even after the open-source end-of-life dates.&lt;/p&gt;
-&lt;img src = "https://raw.githubusercontent.com/joshlong/blog-images/master/azure-spring-apps-enterprise-generally-available/Commercial-support-timeline-for-Spring-Boot.jpg"/&gt;
-&lt;p&gt;&lt;em&gt;Figure 2 - Commercial support timeline for Spring Boot&lt;/em&gt; &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;You can find the current support timelines for &lt;a href="https://spring.io/"&gt;Spring projects here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#3-fully-integrated-into-azure-and-java-ecosystem" class="anchor" name="3-fully-integrated-into-azure-and-java-ecosystem"&gt;&lt;/a&gt;3 - Fully integrated into Azure and Java ecosystem&lt;/h2&gt;
-&lt;p&gt;Azure Spring Apps, including the Enterprise tier, runs on Azure in a fully managed environment. You get all the benefits of Azure and the Java ecosystem, and the experience is familiar and intuitive.&lt;/p&gt;&lt;h3&gt;&lt;a href="#expanding-capabilities-for-applications" class="anchor" name="expanding-capabilities-for-applications"&gt;&lt;/a&gt;Expanding Capabilities for Applications&lt;/h3&gt;
-&lt;p&gt;If you need super scalable and available backend services, you are covered. We have made it possible to leverage the full power of Azure from your applications in Azure Spring Apps. We provide mechanisms for Spring apps to connect and interact with databases, cache, storage, messaging, eventing, and directory services in Azure using Spring Cloud Azure integrations, open-source libraries and database drivers, and Azure SDK for Java. Your apps can interact with your on-premises systems and external services.&lt;/p&gt;
-&lt;img src = "https://raw.githubusercontent.com/joshlong/blog-images/master/azure-spring-apps-enterprise-generally-available/Spring-Cloud-Azure-4.0-in-colors.jpg"/&gt;
-&lt;p&gt;&lt;em&gt;Figure 3 ? Spring Cloud Azure integrations for Azure services&lt;/em&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#connect-applications-to-azure-services-service-connector" class="anchor" name="connect-applications-to-azure-services-service-connector"&gt;&lt;/a&gt;Connect Applications to Azure Services ? Service Connector&lt;/h3&gt;
-&lt;p&gt;You can connect applications on Azure-to-Azure services for databases, cache, storage, messaging, and eventing using the Service Connector.&lt;/p&gt;
-&lt;p&gt;The Service Connector is designed for ease of use. In Azure Spring Apps, you can point the Service Connector to any Azure service and the Service Connector will guide you to connect an application seamlessly. You can automate these connections using Terraform, ARM Template, or Bicep.&lt;/p&gt;&lt;h3&gt;&lt;a href="#zero-trust-secure-network" class="anchor" name="zero-trust-secure-network"&gt;&lt;/a&gt;Zero-Trust - Secure Network&lt;/h3&gt;
-&lt;p&gt;Security is a key tenet of Azure services, and you can secure Java applications by deploying to Azure services in Managed Virtual Networks (VNETs), including Azure Spring Apps. This way, you can secure the perimeters around your Spring Boot applications and other dependencies by: &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Isolating Azure Spring Apps from the Internet and placing your applications and Azure Spring Apps in your private or corporate networks.&lt;/li&gt;
-  &lt;li&gt;Selectively exposing applications as Internet-facing applications.&lt;/li&gt;
-  &lt;li&gt;Enabling applications to interact with on-premises systems such as databases, messaging systems, and directories.&lt;/li&gt;
-  &lt;li&gt;Controlling ingress and egress for applications and Azure Spring Apps.&lt;/li&gt;
-  &lt;li&gt;Composing with Azure network resources such as Application Gateway, Azure Firewall, Azure Front Door, and Express Route, and popular network products such as Palo Alto Firewall, F5 Big-IP, Cloudflare, and Infoblox.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The Azure Spring Apps Reference Architecture shown below is a foundation using a typical enterprise hub and spoke design. Azure Spring Apps is deployed in a single spoke that is dependent on shared services hosted in a hub. &lt;/p&gt;
-&lt;img src = "https://raw.githubusercontent.com/joshlong/blog-images/master/azure-spring-apps-enterprise-generally-available/Azure-Spring-Apps-Enterprise-Reference-Architecture.jpg"/&gt;
-&lt;p&gt;&lt;em&gt;Figure 4 ? shows a well-architected hub and spoke design for applications selectively exposed as public applications&lt;/em&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#zero-trust-secure-communications-end-to-end" class="anchor" name="zero-trust-secure-communications-end-to-end"&gt;&lt;/a&gt;Zero-Trust - Secure Communications End-to-end&lt;/h3&gt;
-&lt;p&gt;You can secure communications end-to-end or terminate transport-level security at any communication point for application. You can automate the provisioning and configuration for all the Azure resources needed for securing communications.&lt;/p&gt;
-&lt;p&gt;Based on the principle of &amp;ldquo;never trust, always verify and credential-free&amp;rdquo;, Zero Trust helps to secure all communications by eliminating unknown and un-managed certificates, and only trust certificates that are shared by verifying identity prior to granting access to those certificates. You can simply configure applications in Azure Spring Apps to securely load certificates from Azure Key Vault into application memory using managed identities and Azure role-based access control. &lt;/p&gt;&lt;h3&gt;&lt;a href="#zero-trust-manage-secrets-using-key-vault" class="anchor" name="zero-trust-manage-secrets-using-key-vault"&gt;&lt;/a&gt;Zero-Trust ? Manage Secrets Using Key Vault&lt;/h3&gt;
-&lt;p&gt;Every application has properties that connect it to its environment and supporting services, things like databases, logging and monitoring tools, messaging platforms, and many other things. Each requires a way to locate and access it, often in the form of URLs and credentials and if these secrets are exposed, that critical information can be used to access key customer data. Even if this data were not protected by law ? and it is in nearly all parts of the globe, for a very good reason ? protecting customer data from leakage should still be of utmost importance to all of us. In Azure Spring Apps, applications can be configured to directly load secrets into memory from Key Vault using managed identities and Azure role-based access control ? Zero-Trust and Zero-Code!&lt;/p&gt;&lt;h3&gt;&lt;a href="#end-user-authentication-and-authorization" class="anchor" name="end-user-authentication-and-authorization"&gt;&lt;/a&gt;End-user Authentication and Authorization&lt;/h3&gt;
-&lt;p&gt;Securing access to applications is critical. You can secure access to your application using organizational identities from Azure Active Directory and social identities in directories such as Facebook, Twitter, and Gmail. You can use Microsoft Authentication Library for Java or Spring Boot Starter for Azure Active Directory. Enable end-users to sign in or authenticate. Then, they can be authorized. Or you can simply configure Single Sign-On (SSO) using the managed Spring Cloud Gateway.&lt;/p&gt;&lt;h3&gt;&lt;a href="#monitor-end-to-end" class="anchor" name="monitor-end-to-end"&gt;&lt;/a&gt;Monitor end-to-end&lt;/h3&gt;
-&lt;p&gt;You can monitor your Spring workloads end-to-end using any tool and platform of your choice - including App Insights, Log Analytics, New Relic, Dynatrace, AppDynamics, Elastic, or Splunk.&lt;/p&gt;
-&lt;img src = "https://raw.githubusercontent.com/joshlong/blog-images/master/azure-spring-apps-enterprise-generally-available/monitor-end-to-end-using-any-tool-and-platform.jpg"/&gt;
-&lt;p&gt;&lt;em&gt;Figure 5 ? Application Transactions visible through Application Insights Application Map&lt;/em&gt;&lt;/p&gt;&lt;h3&gt;&lt;a href="#automate-end-to-end" class="anchor" name="automate-end-to-end"&gt;&lt;/a&gt;Automate end-to-end&lt;/h3&gt;
-&lt;p&gt;You can build end-to-end automation from idea to production using a wide range of automation tools and platforms. Typically, we see our customers create pipelines that are broadly classified into 3 categories:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Provisioning pipelines - provision Azure resources using Terraform, ARM templates, Bicep, or the Azure CLI, creating repeatable scripts to spin up and down environments consistently.&lt;/li&gt;
-  &lt;li&gt;Build pipelines - use Maven or Gradle to build and store JARs into artifactory like Nexus, JFrog, Azure Artifacts, etc.&lt;/li&gt;
-  &lt;li&gt;Deployment pipelines - use GitHub Actions, Azure Pipelines, and the Azure CLI to automate your deployments ? including blue-green deployments to minimize disruption.&lt;/li&gt;
-&lt;/ul&gt;&lt;h3&gt;&lt;a href="#continue-to-leverage-existing-practices" class="anchor" name="continue-to-leverage-existing-practices"&gt;&lt;/a&gt;Continue to leverage existing practices&lt;/h3&gt;
-&lt;p&gt;As you migrate or build, and scale Spring apps on Azure, you can leverage your existing investments in network, monitoring, automation, identity providers, on-premises systems, development and build tools, and app libraries:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Network ? F5, Palo Alto, Cloudflare, Checkpoint, Infoblox, etc.&lt;/li&gt;
-  &lt;li&gt;Monitoring - New Relic, Dynatrace, AppDynamics, Elastic, Splunk, etc.&lt;/li&gt;
-  &lt;li&gt;Automation ? GitHub Actions, Azure Pipelines, Jenkins, GitLab, etc.&lt;/li&gt;
-  &lt;li&gt;Identity providers ? Azure Active Directory, ForgeRock, Auth0, Ping, Okta, etc.&lt;/li&gt;
-  &lt;li&gt;On-premises systems ? databases (say Oracle DB, IBM DB2), messaging (say IBM MQ, TIBCO EMS), eventing (say Kafka), directories (say Active Directory, OpenLDAP, IBM ID), mail, FTP, etc.&lt;/li&gt;
-  &lt;li&gt;Development tools ? IntelliJ, VS Code, Eclipse, Spring Tool Suite, Maven, Gradle, etc.&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#4-get-started-today" class="anchor" name="4-get-started-today"&gt;&lt;/a&gt;4 - Get started today!&lt;/h2&gt;
-&lt;p&gt;Azure Spring Apps Enterprise tier delivers even more productivity, and you can leverage Spring experts to make your projects even more successful. We love to hear how you are building impactful solutions using Enterprise and continue to learn from you.&lt;/p&gt;
-&lt;p&gt;**Start now &amp;ndash; &lt;a href="https://aka.ms/spring-apps-enterprise"&gt;aka.ms/spring-apps-enterprise&lt;/a&gt; **&lt;/p&gt;
-&lt;p&gt;You can also learn more about Azure Spring Apps Enterprise tier GA &lt;a href="https://aka.ms/azure-spring-apps-is-now-generally-available"&gt;announcement by VMware&lt;/a&gt;.&lt;/p&gt;&lt;h4&gt;&lt;a href="#additional-resources" class="anchor" name="additional-resources"&gt;&lt;/a&gt;Additional Resources&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;Learn using an &lt;a href="https://docs.microsoft.com/en-us/learn/modules/azure-spring-cloud-workshop/"&gt;MS Learn module&lt;/a&gt; or &lt;a href="https://github.com/microsoft/azure-spring-cloud-training"&gt;self-paced workshop&lt;/a&gt; on GitHub&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://aka.ms/Fitness-Store"&gt;Deploy&lt;/a&gt; Fitness Store Spring Boot apps to Azure&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://aka.ms/Deploy-Spring"&gt;Deploy&lt;/a&gt; Animal Rescue Spring Boot apps to Azure&lt;/li&gt;
-  &lt;li&gt;Learn &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/"&gt;more&lt;/a&gt; about implementing solutions on Azure Spring Apps&lt;/li&gt;
-  &lt;li&gt;Deploy Spring Boot applications by leveraging enterprise best practices ? &lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/reference-architecture"&gt;Azure Spring Apps Reference Architecture&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Migrate your &lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-spring-cloud"&gt;Spring Boot&lt;/a&gt;, &lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-cloud"&gt;Spring Cloud&lt;/a&gt;, and &lt;a href="https://aka.ms/migrate-tomcat-to-azure-spring-cloud-service"&gt;Tomcat&lt;/a&gt; applications to Azure Spring Apps&lt;/li&gt;
-  &lt;li&gt;Wire Spring applications &lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/"&gt;to interact with Azure services&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;For feedback and questions, please &lt;a href="mailto:AzureSpringCloud-Talk@service.microsoft.com"&gt;e-mail&lt;/a&gt; us.&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

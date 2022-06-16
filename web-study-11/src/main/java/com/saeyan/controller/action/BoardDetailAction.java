@@ -1,7 +1,6 @@
 package com.saeyan.controller.action;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,6 +19,8 @@ public class BoardDetailAction implements Action {
 		String num = request.getParameter("num");
 		
 		BoardDAO bDao = BoardDAO.getInstance();
+		
+		bDao.updateReadCount(num);
 		
 		BoardVO bVo = bDao.selectDetailBoards(num);
 		request.setAttribute("boardList", bVo);
