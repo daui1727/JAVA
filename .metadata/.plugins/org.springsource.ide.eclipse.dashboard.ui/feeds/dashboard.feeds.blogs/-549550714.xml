@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-06-16T00:08:00Z</updated>
+  <updated>2022-06-16T07:00:00Z</updated>
+  <entry>
+    <title>Bootiful Podcast: Spring Framework contributor S?bastien Deleuze on GraalVM, AOT, project Leyden, and WebAssembly</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/06/16/bootiful-podcast-spring-framework-contributor-s-bastien-deleuze-on-graalvm-aot-project-leyden-and-webassembly" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-06-16:4831</id>
+    <updated>2022-06-16T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Spring Framework contributor &lt;a href="https://twitter.com/sdeleuze"&gt;S?bastien Deleuze (@sdeleuze)&lt;/a&gt; on GraalVM, AOT, project Leyden, and WebAssembly.&lt;/p&gt;
+&lt;iframe title="Spring Framework contributor S?bastien Deleuze on GraalVM, AOT, project Leyden, and WebAssembly" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=9snuh-125088e-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>CVE report published for Spring Cloud Function</title>
     <link rel="alternate" href="https://spring.io/blog/2022/06/15/cve-report-published-for-spring-cloud-function" />
@@ -625,19 +638,6 @@ dependencyManagement {&#xD;
   }&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: the good Dr. David Syer on the new and novel in Spring and Kubernetes</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/26/a-bootiful-podcast-the-good-dr-david-syer-on-the-new-and-novel-in-spring-and-kubernetes" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-05-27:4810</id>
-    <updated>2022-05-26T15:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, Josh Long talks to Spring Boot and Spring Cloud luminary, the good Dr. @David_Syer, about the latest and greatest on Spring and Kubernetes &lt;/p&gt;
-&lt;iframe title="The good Dr. David Syer on the new and novel in Spring and Kubernetes " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=87fyr-1236e3b-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

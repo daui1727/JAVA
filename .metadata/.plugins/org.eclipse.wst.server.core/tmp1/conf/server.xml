@@ -156,7 +156,10 @@
 				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\web-study-11-ex" path="/web-study-11-ex" reloadable="true" source="org.eclipse.jst.jee.server:web-study-11-ex">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
 				</Context>
-			</Host>
+				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\web-study-12-finish" path="/web-study-12" reloadable="true" source="org.eclipse.jst.jee.server:web-study-12-finish">
+					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
+				</Context>
+			<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\web-study-12-renewal" path="/web-study-12-renewal" reloadable="true" source="org.eclipse.jst.jee.server:web-study-12-renewal"/></Host>
 		</Engine>
 	</Service>
 </Server>

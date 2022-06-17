@@ -30,7 +30,7 @@ public class MemberDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
-		String sql = "SELECT * FROM(SELECT * FROM EMPLOYEES ORDER BY rownum desc)";
+		String sql = "select * from employees order by enter desc";
 		
 		try {
 			
