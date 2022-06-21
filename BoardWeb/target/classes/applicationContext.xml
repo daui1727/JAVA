@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- <bean id="tv1" class="polymorphism.SamsungTV" p:speaker-ref="sony" p:price="2700000"></bean>
+
+	<bean id="tv1" class="polymorphism.LgTV">
+		<constructor-arg ref="apple"></constructor-arg>
+		<constructor-arg value="500" type="int"></constructor-arg>
+	</bean>
+	<bean id="tv2" class="polymorphism.LgTV"/>
+	<bean id="sony" class="polymorphism.sonyTV"/>
+	
+	<bean id="sony" class="polymorphism.SonySpeaker"/>
+	<bean id="apple" class="polymorphism.AppleSpeaker"/> -->
+	
+	
+	<bean id="CollectionBean" class="com.springbook.injection.CollectionBean">
+		<property name="addressList">
+			<list>
+				<value>서울시 강남구 역삼동</value>
+				<value>서울시 성동구 행당동</value>
+			</list>
+		</property>
+		
+		<property name="addressSet">
+			<set value-type="java.lang.String">
+				<value>서울시 강남구 역삼동</value>
+				<value>서울시 성동구 성수동</value>
+				<value>서울시 성동구 동동동</value>
+			</set>
+		</property>
+		
+		<property name="addressMap">
+			<map>
+				<entry>
+					<key><value>고길동</value></key>
+					<value>서울시 강서구 화곡동</value>
+				</entry>
+				
+				<entry>
+					<key><value>마이콜</value></key>
+					<value>서울시 강서구 역삼동</value>
+				</entry>
+				<entry key="마이콜2" value="서울시 강서구 화곡동" />
+			</map>
+		</property>
+		
+		<property name="addressProperties">
+			<props>
+				<prop key="고길동">서울시 강남구 역삼동</prop>
+				<prop key="마이콜">서울시 강남구 둔촌동</prop>
+			</props>
+		</property>
+		
+		
+		
+	</bean>
+	
+</beans>

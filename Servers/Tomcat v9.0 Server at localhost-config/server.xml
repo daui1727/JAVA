@@ -114,9 +114,7 @@
 
 
 
-				<Context docBase="web-study-09" path="/web-study-09" reloadable="true" source="org.eclipse.jst.jee.server:web-study-09">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
-				</Context>
+				
 
 
 				<Context docBase="BoardJspEX" path="/BoardJspEX" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspEX"/>
@@ -128,38 +126,24 @@
 
 
 
-				<Context docBase="A_EX_HRD" path="/A_EX_HRD" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="system"/>
-				</Context>
+				
 
 
 
 				<Context docBase="BoardJspProject" path="/BoardJspProject" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspProject"/>
-				<Context docBase="A_EX_HRD_RE" path="/A_EX_HRD_RE" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD_RE"/>
-				<Context docBase="A_EX_HRD_SERV" path="/A_EX_HRD_SERV" reloadable="true" source="org.eclipse.jst.jee.server:A_EX_HRD_SERV">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="system"/>
-				</Context>
-				<Context docBase="JusoTest" path="/JusoTest" reloadable="true" source="org.eclipse.jst.jee.server:JusoTest"/>
+				
+				
+				
 
-				<Context docBase="web-study-10" path="/web-study-10" reloadable="true" source="org.eclipse.jst.jee.server:web-study-10">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
-				</Context>
-				<Context docBase="JusoSampleTest" path="/JusoSampleTest" reloadable="true" source="org.eclipse.jst.jee.server:JusoSampleTest"/>
-				<Context docBase="MovieTest" path="/MovieTest" reloadable="true" source="org.eclipse.jst.jee.server:MovieTest">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
-				</Context>
-				<Context docBase="web-study-11" path="/web-study-11" reloadable="true" source="org.eclipse.jst.jee.server:web-study-11">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
-				</Context>
+				
+				
+				
+				
 
 
-				<Context docBase="web-study-11-ex" path="/web-study-11-ex" reloadable="true" source="org.eclipse.jst.jee.server:web-study-11-ex">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
-				</Context>
-				<Context docBase="web-study-12-finish" path="/web-study-12" reloadable="true" source="org.eclipse.jst.jee.server:web-study-12-finish">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
-				</Context>
-			<Context docBase="web-study-12-renewal" path="/web-study-12-renewal" reloadable="true" source="org.eclipse.jst.jee.server:web-study-12-renewal"/></Host>
+				
+				
+			<Context docBase="MyBatisTest2" path="/mybatist" reloadable="true" source="org.eclipse.jst.jee.server:MyBatisTest2"/></Host>
 		</Engine>
 	</Service>
 </Server>

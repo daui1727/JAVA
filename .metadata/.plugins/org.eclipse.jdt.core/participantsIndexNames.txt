@@ -35,6 +35,8 @@ C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2699673186.index
 \web-study-12-finish\src
 C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\307234354.index
 \web-review-09\src\main\java
+C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1149236617.index
+\MyBatisTest2\src\main\java
 C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2117434224.index
 \web-review-09\src\main\java
 C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\219853942.index
@@ -47,6 +49,8 @@ C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3909451767.index
 \BoardJspProject\src\main\java
 C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\292720694.index
 \JusoTest\src\main\java
+C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3080424700.index
+\MyBatisTest\src\main\java
 C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3309313721.index
 \web-study-12-finish\src
 C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\219853942.index
