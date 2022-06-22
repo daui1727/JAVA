@@ -2,8 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	
 
 	<!-- <bean id="tv1" class="polymorphism.SamsungTV" p:speaker-ref="sony" p:price="2700000"></bean>
 
@@ -18,7 +22,7 @@
 	<bean id="apple" class="polymorphism.AppleSpeaker"/> -->
 	
 	
-	<bean id="CollectionBean" class="com.springbook.injection.CollectionBean">
+	<!-- <bean id="CollectionBean" class="com.springbook.injection.CollectionBean">
 		<property name="addressList">
 			<list>
 				<value>서울시 강남구 역삼동</value>
@@ -56,8 +60,26 @@
 			</props>
 		</property>
 		
-		
-		
+	</bean> -->
+	
+	<!-- <context:component-scan base-package="polymorphism"></context:component-scan> -->
+	
+	<context:component-scan base-package="com.springbook.biz"></context:component-scan>
+	
+	<!-- <bean id="userService" class="com.springbook.biz.user.impl.UserServiceImpl">
+		<property name="userDAO" ref="userDAO"/>
 	</bean>
+	
+	<bean id="userDAO" class="com.springbook.biz.user.impl.UserDAO"/> -->
+	
+	<bean id="log" class="com.springbook.biz.common.Log4jAdvice"></bean>
+	
+	<!-- * 어떤 반환값이 와도 상관없다. /// 함수명(..) 어떤거든 상관없다. -->
+	<aop:config>
+		<aop:pointcut expression="execution(* com.springbook.biz..*Impl.*(..))" id="allPointcut"/>
+		<aop:aspect ref="log">
+			<aop:before pointcut-ref="allPointcut" method="printLogging"/>
+		</aop:aspect>
+	</aop:config>
 	
 </beans>

@@ -1,13 +1,26 @@
 package polymorphism;
 
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+// xml에서 component-scan으로 Component가 붙은 것들을 메모리 공간에 올린다.
+@Component
 public class SamsungTV implements TV{
 	
-	private SonySpeaker speaker;
+	// 메모리 공간에 speaker가 떠있다면 그걸 찾아서 집어넣는다.
+//	@Autowired
+//	@Qualifier("sonySpeaker")	// 메모리 공간에 speaker를 가진 클래스가 여러개가 떠있다면 qualifier로 특정한다.
+	@Resource(name="sonySpeaker")
+	private Speaker speaker;
+//	private SonySpeaker speaker;
 	private int price;
 	
 	
 	
-	public void setSpeaker(SonySpeaker speaker) {
+	public void setSpeaker(Speaker speaker) {
 		System.out.println("setSpeaker 호출");
 		this.speaker = speaker;
 	}
@@ -21,12 +34,12 @@ public class SamsungTV implements TV{
 		System.out.println("samsungTV 생성자(default)");
 	}
 	
-	public SamsungTV(SonySpeaker speaker) {
+	public SamsungTV(Speaker speaker) {
 		System.out.println("samsungTV 생성자(1개)");
 		this.speaker = speaker;
 	}
 	
-	public SamsungTV(SonySpeaker speaker, int price) {
+	public SamsungTV(Speaker speaker, int price) {
 		System.out.println("samsungTV 생성자(2개)");
 		this.speaker = speaker;
 		this.price = price;
@@ -47,7 +60,7 @@ public class SamsungTV implements TV{
 
 	public void powerOn() {
 		System.out.println("SamsungTV---전원 켠다.");	
-		System.out.printf("가격 : %d\n", price);	
+//		System.out.printf("가격 : %d\n", price);	
 	}
 	public void powerOff() {
 		System.out.println("SamsungTV---전원 끈다.");	

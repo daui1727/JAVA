@@ -5,7 +5,40 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-06-20T20:00:00Z</updated>
+  <updated>2022-06-21T07:00:00Z</updated>
+  <entry>
+    <title>This Week in Spring - June 21st, 2022</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/06/21/this-week-in-spring-june-21st-2022" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-06-21:4837</id>
+    <updated>2022-06-21T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! How are you? It&amp;rsquo;s been a hot minute since we last chatted. I was in Germany this time last week. Now, I&amp;rsquo;m back in beautiful San Francisco. Today the weather will climb to a monumental 84 F! That&amp;rsquo;s very unusual, for any time of the year, here in San Francisco. Most places here in San Francisco don&amp;rsquo;t have air conditioning. Some have heating. I bought a brand new condo in 2014 and it didn&amp;rsquo;t have air conditioning. You just open the window. I am privileged enough that I have air conditioning today, of course. I mention all this to say that it&amp;rsquo;s &lt;em&gt;hot&lt;/em&gt; here! I worry for the elderly! When it gets this hot, the YMCA and other organizations typically invite elderly people to come in and get some cool air and water. It&amp;rsquo;s dangerous. Some days it gets even hotter. Very rare, but it does happen. I hope you&amp;rsquo;re all doing well. Take care of yourselves and each other, my friends. &lt;/p&gt;
+&lt;p&gt;And, speaking of being hot, let&amp;rsquo;s look at this week&amp;rsquo;s roundup of the latest-and-greatest that&amp;rsquo;s &lt;em&gt;hot&lt;/em&gt; off the press! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/16/bootiful-podcast-spring-framework-contributor-s-bastien-deleuze-on-graalvm-aot-project-leyden-and-webassembly"&gt;Bootiful Podcast: Spring Framework contributor S?bastien Deleuze on GraalVM, AOT, project Leyden, and WebAssembly&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/15/cve-report-published-for-spring-cloud-function"&gt;CVE report published for Spring Cloud Function&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://talktotheduck.dev/debugging-collections-streams-and-watch-renderers"&gt;Debugging Collections, Streams and Watch Renderers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699883384/0/baeldung~Difference-Between-Fluxcreate-and-Fluxgenerate"&gt;Difference Between Flux.create and Flux.generate&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699736092/0/baeldung~Handle-Spring-Security-Exceptions-With-ExceptionHandler"&gt;Handle Spring Security Exceptions With @ExceptionHandler&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699680972/0/baeldung~MongoDB-Composite-Key-With-Spring-Data"&gt;MongoDB Composite Key With Spring Data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/20/spring-authorization-server-0-3-1-available-now"&gt;Spring Authorization Server 0.3.1 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Oydba8VHPZM"&gt;Monitoring Spring Boot applications using Spring Boot Admin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/20/spring-data-2021-2-1-and-2021-1-5-released"&gt;Spring Data 2021.2.1 and 2021.1.5 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699403142/0/baeldung~Spring-Data-JPA-Run-an-App-Without-a-Database"&gt;Spring Data JPA ? Run an App Without a Database&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/20/spring-data-mongodb-spel-expression-injection-vulnerability-cve-2022-22980"&gt;Spring Data MongoDB SpEL Expression Injection Vulnerability (CVE-2022-22980)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/15/spring-framework-5-3-21-available-now"&gt;Spring Framework 5.3.21 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/20/spring-security-5-7-2-and-5-6-6-available-now"&gt;Spring Security 5.7.2 and 5.6.6 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/15/spring-tools-4-15-0-released"&gt;Spring Tools 4.15.0 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/18/spring-tools-4-15-1-released"&gt;Spring Tools 4.15.1 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699680974/0/baeldung~What-are-the-Spring-Boot-Default-Memory-Settings"&gt;What are the Spring Boot Default Memory Settings?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699573478/0/baeldung~A-Guide-to-Docker-Private-Registry"&gt;A Guide to Docker Private Registry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699263599/0/baeldung~Is-There-a-Destructor-in-Java"&gt;Is There a Destructor in Java?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Security 5.7.2 and 5.6.6 available now</title>
     <link rel="alternate" href="https://spring.io/blog/2022/06/20/spring-security-5-7-2-and-5-6-6-available-now" />
@@ -658,25 +691,6 @@ compile &amp;#39;org.springframework.cloud:spring-cloud-starter-netflix-eureka-c
 &lt;p&gt;In this second installment, Andi and I are joined by Spring for GraphQL lead &lt;a href="https://twitter.com/rstoya05"&gt;Rossen Stoyanchev (@rstoya05)&lt;/a&gt; as we look at using the Spring for GraphQL component model by writing queries. &lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/zltMcbnAxyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;I know it&amp;rsquo;s been more than a month since we last published a video, so I&amp;rsquo;m going to be releasing every episode of this series very quickly, over the next week or two. I&amp;rsquo;ve already recorded and mostly finished producing eight episodes. I&amp;rsquo;m working on producing a ninth, and that&amp;rsquo;ll be that! A complete introduction to all things Spring for GraphQL. These are of course part of the usual &lt;a href="https://www.youtube.com/watch?v=zltMcbnAxyA&amp;list=PLgGXSWYM2FpPw8rV0tZoMiJYSCiLhPnOc"&gt;&lt;code&gt;Spring Tips&lt;/code&gt;&lt;/a&gt; playlist on YouTube, but also part of the &lt;a href="https://www.youtube.com/watch?v=gvIqFDNGgwU&amp;list=PLgGXSWYM2FpNRPDQnAGfAHxMl3zUG2Run"&gt;&lt;code&gt;Learn Spring for GraphQL with Josh Long&lt;/code&gt;&lt;/a&gt; playlist. Follow that one to be notified of any new episodes! &lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Stream Applications 2021.1.2 GA Release now available</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/06/02/spring-cloud-stream-applications-2021-1-2-ga-release-now-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Corneil du Plessis</name>
-    </author>
-    <id>tag:spring.io,2022-06-02:4817</id>
-    <updated>2022-06-02T17:26:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I¡¯m happy to announce that Spring Cloud Stream Applications &lt;code&gt;2021.1.2&lt;/code&gt; has been released.&lt;/p&gt;
-&lt;p&gt;This release is based on Spring Boot &lt;code&gt;2.6.8&lt;/code&gt; and Spring Cloud &lt;code&gt;2021.0.3&lt;/code&gt; and contains many improvements and bug fixes - check out the &lt;a href="https://github.com/spring-cloud/stream-applications/releases/tag/v2021.1.2"&gt;release notes&lt;/a&gt; for more information.&lt;/p&gt;&lt;h2&gt;&lt;a href="#future-plans" class="anchor" name="future-plans"&gt;&lt;/a&gt;Future plans&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Switch apps to use Spring Boot 3.x&lt;/li&gt;
-  &lt;li&gt;Move Spring Cloud Stream App Maven plugins to stream-application repository.&lt;/li&gt;
-  &lt;li&gt;Align versioning of Stream Functions and Apps.&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
-&lt;p&gt;Please continue to engage with us by creating bug reports and feature requests on &lt;a href="https://github.com/spring-cloud/stream-applications"&gt;Github&lt;/a&gt; and asking questions on StackOverflow using the &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-stream"&gt;spring-cloud-stream&lt;/a&gt; or &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;spring-cloud-dataflow&lt;/a&gt; tags.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
