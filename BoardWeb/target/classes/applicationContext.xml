@@ -66,20 +66,47 @@
 	
 	<context:component-scan base-package="com.springbook.biz"></context:component-scan>
 	
+	
 	<!-- <bean id="userService" class="com.springbook.biz.user.impl.UserServiceImpl">
 		<property name="userDAO" ref="userDAO"/>
 	</bean>
 	
 	<bean id="userDAO" class="com.springbook.biz.user.impl.UserDAO"/> -->
 	
-	<bean id="log" class="com.springbook.biz.common.Log4jAdvice"></bean>
+	<!-- <bean id="log" class="com.springbook.biz.common.Log4jAdvice"/>
+	<bean id="afterReturning" class="com.springbook.biz.common.AfterReturningAdvice"/>
+	<bean id="afterThrowing" class="com.springbook.biz.common.AfterThrowingAdvice"/>
+	<bean id="around" class="com.springbook.biz.common.AroundAdvice"/>
+	<bean id="before" class="com.springbook.biz.common.BeforeAdvice"/> -->
 	
 	<!-- * 어떤 반환값이 와도 상관없다. /// 함수명(..) 어떤거든 상관없다. -->
-	<aop:config>
+	<!-- <aop:config>
 		<aop:pointcut expression="execution(* com.springbook.biz..*Impl.*(..))" id="allPointcut"/>
 		<aop:aspect ref="log">
 			<aop:before pointcut-ref="allPointcut" method="printLogging"/>
 		</aop:aspect>
+	</aop:config> -->
+	
+	<!-- <aop:config>
+		<aop:pointcut expression="execution(* com.springbook.biz..*Impl.*(..))" id="allPointcut"/>
+		<aop:aspect ref="afterThrowing">
+			<aop:after-throwing pointcut-ref="allPointcut" method="exceptionLog"/>
+		</aop:aspect>
+	</aop:config> -->
+	
+	<aop:config>
+		<aop:pointcut expression="execution(* com.springbook.biz..*Impl.*(..))" id="allPointcut"/>
+		
+		<aop:aspect ref="around">
+			<aop:around pointcut-ref="allPointcut" method="aroundLog"/>
+		</aop:aspect>
 	</aop:config>
+	
+	
+	
+	
+	
+	
+	
 	
 </beans>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- id는 생략가능하지만 class는 필수. class 작성 시 정확한 패키지 경로와 클래스 이름을 지정해야한다. id는 bean 객체를 위한 이름 지정-->
+	<bean id="tv" class="polymorphismEx.SamsungTV" init-method="initMethod" destroy-method="destroyMethod" lazy-init="true"/>
+	
+
+</beans>

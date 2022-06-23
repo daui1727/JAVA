@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.saeyan.dto.BoardVO"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="com.saeyan.dao.BoardDAO"/>
-    <fullyQualifiedTypeName name="com.saeyan.controller.action.BoardListAction"/>
-    <fullyQualifiedTypeName name="com.it.controller.action.ActionFactory"/>
-    <fullyQualifiedTypeName name="com.it.controller.action.Action"/>
-    <fullyQualifiedTypeName name="com.sun.net.httpserver.Authenticator.Result"/>
-    <fullyQualifiedTypeName name="util.DBManager"/>
-    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="com.it.dto.MemberVO"/>
-    <fullyQualifiedTypeName name="com.it.controller.action.EmpListAction"/>
-    <fullyQualifiedTypeName name="com.it.dao.MemberDAO"/>
-    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
-    <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
     <fullyQualifiedTypeName name="javax.naming.Context"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="com.nonage.dao.ProductDAO"/>
@@ -43,7 +29,6 @@
     <fullyQualifiedTypeName name="com.springbook.biz.board.impl.BoardDAO"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.springbook.biz.board.BoardVO"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.springbook.biz.board.BoardService"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
@@ -52,12 +37,27 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.springbook.biz.common.JDBCUtil"/>
     <fullyQualifiedTypeName name="com.springbook.biz.user.impl.UserDAO"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
     <fullyQualifiedTypeName name="com.springbook.biz.user.UserService"/>
-    <fullyQualifiedTypeName name="com.springbook.biz.user.UserVO"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.springbook.biz.common.LogAdvice"/>
     <fullyQualifiedTypeName name="com.springbook.biz.common.Log4jAdvice"/>
+    <fullyQualifiedTypeName name="polymorphismEx.BeanFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="polymorphismEx.SamsungTV"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="com.springbook.biz.user.UserVO"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.JoinPoint"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="org.springframework.util.StopWatch"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterReturning"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterThrowing"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
 </qualifiedTypeNameHistroy>
