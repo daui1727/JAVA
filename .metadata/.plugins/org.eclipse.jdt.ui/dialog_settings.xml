@@ -93,7 +93,7 @@
 	<section name="JarPackageWizard">
 		<item key="JarPackageWizardPage.EXPORT_CLASS_FILES" value="true"/>
 		<item key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER" value="false"/>
-		<item key="JarPackageWizardPage.EXPORT_JAVA_FILES" value="false"/>
+		<item key="JarPackageWizardPage.EXPORT_JAVA_FILES" value="true"/>
 		<item key="JarPackageWizardPage.REFACTORINGS" value="false"/>
 		<item key="JarPackageWizardPage.COMPRESS" value="true"/>
 		<item key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES" value="false"/>
@@ -110,6 +110,7 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Work2\이정빈.jar"/>
 			<item value="C:\Work2\calc.jar"/>
 			<item value="C:\Work2\YoungBuildTest.jar"/>
 			<item value="C:\Work2\youngbuildTest.jar"/>

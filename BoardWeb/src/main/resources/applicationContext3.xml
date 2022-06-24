@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	
+
+	<context:component-scan base-package="com.springbook.biz">
+	</context:component-scan>
+	
+	<context:property-placeholder location="classpath:config/database.properties" />
+	
+	<!-- Jdbc Template 클래스를 bean 등록 / DataSource 설정 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driver}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+	<!-- JdbcTemplate jdbcTemplate = new JdbcTemplate(); -->
+	<!-- Spring JDBC 설정 / JdbcTemplate 객체에 DataSource 객체를 의존성 주입해야만 한다. -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- 트랜잭션 관리자 설정 -->
+	<bean id="txtManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- 트랜잭션 어드바이스 설정 -->
+	<tx:advice id="txtAdvice" transaction-manager="txtManager">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="*"/>
+		</tx:attributes>
+	</tx:advice>
+	
+	<!-- AOP 설정을 통한 트랜잭션 적용 -->
+	<aop:config>
+		<aop:pointcut id="txPointcut" expression="execution(* com.springbook.biz..*(..))"/>
+		
+		<aop:advisor pointcut-ref="txPointcut" advice-ref="txtAdvice"/>
+	</aop:config>
+	
+	
+	
+	
+	
+	
+	
+</beans>

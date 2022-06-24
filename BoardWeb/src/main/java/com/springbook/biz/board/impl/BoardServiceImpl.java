@@ -11,12 +11,17 @@ import com.springbook.biz.board.BoardVO;
 @Service("boardService")
 public class BoardServiceImpl implements BoardService{
 	
+//	@Autowired
+//	private BoardDAO boardDAO;
+	
+	// BoardDAOSpring 객체를 이용하여 DB 연동을 처리하도록 수정
 	@Autowired
-	private BoardDAO boardDAO;
+	private BoardDAOSpring boardDAO;
 	
 	public void insertBoard(BoardVO vo) {
-		if(vo.getSeq() == 0)
-			throw new IllegalArgumentException("0번 글은 등록할 수 없습니다.");
+//		if(vo.getSeq() == 0)
+//			throw new IllegalArgumentException("0번 글은 등록할 수 없습니다.");
+		boardDAO.insertBoard(vo);
 		boardDAO.insertBoard(vo);
 	}
 	
