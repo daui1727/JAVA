@@ -39,6 +39,8 @@ C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\307234354.index
 \web-review-09\src\main\java
 C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1149236617.index
 \MyBatisTest2\src\main\java
+C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1985579192.index
+\BoardWeb\src\main\java
 C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2117434224.index
 \web-review-09\src\main\java
 C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\219853942.index
