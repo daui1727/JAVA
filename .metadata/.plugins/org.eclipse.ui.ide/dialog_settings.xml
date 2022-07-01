@@ -118,8 +118,11 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\165\Desktop\MyBatisTest"/>
 			<item value="C:\Users\165\Desktop\BoardWeb"/>
+			<item value="C:\Users\165\Desktop\EzenEx02"/>
+			<item value="C:\Users\165\Desktop\EzenEx01"/>
+			<item value="C:\Users\165\Desktop\EzenEx00"/>
+			<item value="C:\Users\165\Desktop\MyBatisTest"/>
 			<item value="C:\Users\165\Desktop\web-study-12-finish"/>
 			<item value="C:\Users\165\Desktop\web-study-11-mvc2"/>
 			<item value="C:\Work"/>

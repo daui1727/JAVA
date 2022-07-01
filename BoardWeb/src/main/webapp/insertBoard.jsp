@@ -15,11 +15,11 @@
 	
 		<h1>새로운 글 등록</h1>
 		<br><br>
-		<a href="logout_proc.jsp">Log-out</a>
+		<a href="logout.do">Log-out</a>
 		
 		<hr>
 		
-		<form action="insertBoard_proc.jsp" method="post">
+		<form action="insertBoard.do" method="post">
 			<table border="1">
 				<tr>
 					<td bgcolor="orange" width="70">제목</td>
@@ -51,8 +51,8 @@
 		
 		<hr>
 		
-		<a href="deleteBoard.jsp">글 삭제</a>&nbsp;&nbsp;&nbsp;
-		<a href="getBoardList.jsp">글 목록</a>
+		<a href="deleteBoard.do">글 삭제</a>&nbsp;&nbsp;&nbsp;
+		<a href="getBoardList.do">글 목록</a>
 	
 	</center>
 

@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="main"/>
+		<item key="selection" value="biz"/>
 		<list key="findhistory">
+			<item value="biz"/>
+			<item value="biz\"/>
+			<item value="lization"/>
 			<item value="main"/>
 			<item value="footer"/>
 			<item value="hit"/>
