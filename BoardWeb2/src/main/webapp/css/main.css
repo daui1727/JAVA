@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+*{margin:0; padding:0;}
+
+table, th, tr, td{padding:20px 30px;}
+
+input[type=submit]{padding:10px 20px;}

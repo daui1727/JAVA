@@ -117,11 +117,9 @@
 				
 
 
-				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspEX" path="/BoardJspEX" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspEX"/>
+				
 
-				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspA" path="/BoardJspA" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspA">
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"/>
-				</Context>
+				
 
 
 
@@ -130,7 +128,7 @@
 
 
 
-				<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardJspProject" path="/BoardJspProject" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspProject"/>
+				
 				
 				
 				
@@ -143,7 +141,7 @@
 
 				
 				
-			<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\MyBatisTest2" path="/mybatist" reloadable="true" source="org.eclipse.jst.jee.server:MyBatisTest2"/><Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardWeb" path="/BoardWeb" reloadable="true" source="org.eclipse.jst.jee.server:BoardWeb"/></Host>
+			<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\BoardWeb2" path="/biz" reloadable="true" source="org.eclipse.jst.jee.server:BoardWeb2"/></Host>
 		</Engine>
 	</Service>
 </Server>

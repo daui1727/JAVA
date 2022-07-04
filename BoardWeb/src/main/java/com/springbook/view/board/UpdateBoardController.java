@@ -35,7 +35,7 @@ public class UpdateBoardController implements Controller {
 //		return "getBoardList.do";
 		
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("getBoardList.do");
+		mav.setViewName("redirect:getBoardList.do");
 		return mav;
 		
 	}
