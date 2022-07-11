@@ -118,6 +118,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\165\Desktop\bookShop01"/>
 			<item value="C:\Users\165\Desktop\BoardWeb"/>
 			<item value="C:\Users\165\Desktop\EzenEx02"/>
 			<item value="C:\Users\165\Desktop\EzenEx01"/>

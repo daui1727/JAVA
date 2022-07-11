@@ -6,8 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="biz"/>
+		<item key="selection" value="mybatis"/>
 		<list key="findhistory">
+			<item value="mybatis"/>
+			<item value="spring-test"/>
+			<item value="juni"/>
+			<item value="spring-jd"/>
+			<item value="conn"/>
+			<item value="ojd"/>
+			<item value="app"/>
 			<item value="biz"/>
 			<item value="biz\"/>
 			<item value="lization"/>
