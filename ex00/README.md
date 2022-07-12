@@ -384,6 +384,52 @@ commit;
 select * from tbl_board;
 
 
+**22. pom.xml에 복붙 후 원래 있던것 지우기
+<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+</dependency>
+
+
+**23. org.zerock.domain 패키지에 BoardVO 클래스 작성
+import java.util.Date;
+import lombok.Data;
+
+/* 오라클 BoardVO와 연동(tbl_board)
+ BNO        NOT NULL NUMBER(10)     
+TITLE      NOT NULL VARCHAR2(200)  
+CONTENT    NOT NULL VARCHAR2(2000) 
+WRITER     NOT NULL VARCHAR2(50)   
+REGDATE             DATE           
+UPDATEDATE          DATE   
+*/
+
+@Data
+public class BoardVO {
+	
+private Long bno;
+private String title, content, writer;
+private Date regdate, updatedate;
+
+}
+
+**24. org.zerock.mapper패키지에 BoardMapper 인터페이스 작성
+import java.util.List;
+
+import org.apache.ibatis.annotations.Select;
+import org.zerock.domain.BoardVO;
+
+public interface BoardMapper {
+	
+@Select("select * from tbl_board where bno > 0")
+public List<BoardVO> getList();
+
+}
+
+**25. src/test/java에 org.zerock.mapper 패키지 생성 후 BoardMapperTests 클래스 생성
 
 
 
@@ -412,4 +458,57 @@ grant connect, dba to book;
 select dbms_xdb.gethttpport() from dual; -- 사용 포트번호 확인
 
 exec dbms_xdb.sethttpport(9090); -- 포트번호 변경
+
+
+
+********************************
+
+
+
+0712 - 수업
+
+select sysdate from dual
+
+dual은 system에서 기본으로 만들어 놓은 테이블 sys 소유
+select 만으로 데이터를 조회하고 싶을때 dual을 이용한거 처럼특별한 from에 담을 게 없을때 사용하는 용도
+
+SELECT SYSDATE FROM DUAL;
+SELECT SYSTIMESTAMP FROM DUAL
+
+계산식을 출력해보고 싶을때도 사용이 가능합니다.
+SELECT (10+10)/2 FROM DUAL;
+테이블만들기전에 임시 데이터를 만들때도 사용합니다
+SELECT * from  (    
+	SELECT 'GoCoder' AS Name FROM dual 
+	union all    
+	SELECT 'Gocoder.Tistory.com' AS Blog FROM dual    
+	union all    
+	SELECT 'GoCoder.net' AS HomePage FROM dual
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -141,7 +141,7 @@
 
 				
 				
-			<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ex00" path="" reloadable="true" source="org.eclipse.jst.jee.server:ex00"/></Host>
+			<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ex01" path="" reloadable="true" source="org.eclipse.jst.jee.server:ex01"/><Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\bookShop01" path="/mytest04" reloadable="true" source="org.eclipse.jst.jee.server:bookShop01"/></Host>
 		</Engine>
 	</Service>
 </Server>

@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="mybatis"/>
+		<item key="selection" value="grant"/>
 		<list key="findhistory">
+			<item value="grant"/>
 			<item value="mybatis"/>
 			<item value="spring-test"/>
 			<item value="juni"/>
