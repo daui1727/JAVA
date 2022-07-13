@@ -36,6 +36,12 @@ public class Test {
 	}
 	
 	@org.junit.Test
+    public void factoryTest() {
+        System.out.println(sqlFactory);
+      
+    }
+	
+	@org.junit.Test
 	public void sessionTest() {
 		try(SqlSession session = sqlFactory.openSession()) {
 			log.info("---------------");

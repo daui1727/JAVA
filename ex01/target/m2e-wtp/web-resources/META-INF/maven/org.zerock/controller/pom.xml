@@ -13,6 +13,13 @@
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
+	<!-- 오라클 -->
+	<repositories>
+		<repository>
+			<id>oracle</id>
+			<url>http://maven.jahia.org/maven2</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<!-- Spring -->
 		<dependency>

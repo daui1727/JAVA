@@ -199,18 +199,274 @@ public void testUpdate() {
 	log.info("update : " + mapper.update(vo));
 }
 
-**10. org.zerock.controller 안에 BoardController 작성
+
+**10. src/main/java안에 org.zerock.service 패키지 작성 후 BoardService 인터페이스 작성
+import java.util.List;
+
+import org.zerock.domain.BoardVO;
+
+public interface BoardService {
+	
+	public void register(BoardVO vo);  // 등록
+	public int modify(BoardVO vo); // 수정
+	public int remove(Long bno);  // 삭제
+	public BoardVO get(Long bno);  // 읽기
+	public List<BoardVO> getList();  // 전체 읽기
+	public void registerSelectKey(BoardVO vo);
+
+}
+
+**11. org.zerock.service 패키지 안에 BoardServiceImpl 클래스 작성
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.zerock.domain.BoardVO;
+import org.zerock.mapper.BoardMapper;
+
+import lombok.AllArgsConstructor;
+import lombok.extern.log4j.Log4j;
+
+@Service
+@Log4j
+@AllArgsConstructor  // AutoWired를 쓰지 않아도 변수를 자동 주입해주는.
+public class BoardServiceImpl implements BoardService{
+
+private BoardMapper mapper;
+
+@Override
+public void register(BoardVO vo) {
+	log.info("register ---------------------- ");
+	
+	mapper.insert(vo);
+}
+
+@Override
+public void registerSelectKey(BoardVO vo) {
+	log.info("register ---------------------- ");
+	
+	mapper.insertSelectKey(vo);
+}
+
+@Override
+public int modify(BoardVO vo) {
+	log.info("modify ---------------------- ");
+	
+	return mapper.update(vo);
+}
+
+@Override
+public int remove(Long bno) {
+	log.info("remove ---------------------- ");
+	
+	return mapper.delete(bno);
+}
+
+@Override
+public BoardVO get(Long bno) {
+	log.info("get ---------------------- ");
+	
+	return mapper.read(bno);
+}
+
+@Override
+public List<BoardVO> getList() {
+	log.info("getList ---------------------- ");
+	
+	return mapper.getList();
+}
+	
+	
+
+}
+
+**12. src/test/java에 org.zerock.service 패키지 생성 후 BoardServiceImplTests 클래스 작성
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.zerock.domain.BoardVO;
+
+import lombok.extern.log4j.Log4j;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+@Log4j
+public class BoardServiceImplTests {
+	
+@Autowired
+private BoardService service;
+
+@Test
+public void testRegister() {
+	BoardVO vo = new BoardVO();
+	vo.setTitle("java의 정석2");
+	vo.setContent("자바 책2.....");
+	vo.setWriter("남궁성2");
+	service.register(vo);
+ }
+}
+
+**13. root-context.xml에 아래 추가
+<context:component-scan base-package="org.zerock.service"></context:component-scan>
 
 
 
+**14. org.zerock.controller패키지 안에 BoardController 클래스 작성
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.zerock.service.BoardService;
+
+import lombok.extern.log4j.Log4j;
+
+@Controller
+@Log4j
+@RequestMapping("/board/*")
+public class BoardController {
+	
+@Autowired
+private BoardService service;
+
+@RequestMapping("list")
+public void list(Model model) {
+	log.info("list");
+	model.addAttribute("list", service.getList());
+}
+	
+}
+
+**15. views 폴더에 board 폴더 작성 후 list.jsp 작성
+
+http://localhost:8181/board/list 호출 시 jsp 페이지 실행됨.
+
+**16. src/test/java에 org.zerock.controller 패키지 안에 BoardControllerTests 클래스 작성
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
+
+import lombok.extern.log4j.Log4j;
+
+@WebAppConfiguration
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration({"file:src/main/webapp/WEB-INF/spring/root-context.xml"
+	, "file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"})
+@Log4j
+public class BoardControllerTests {
+	
+@Autowired
+private WebApplicationContext ctx;
+
+private MockMvc mockMvc;
+
+//@Test 어노테이션 실행 전 선행처리(before)
+@Before
+public void setup() {
+	this.mockMvc = MockMvcBuilders.webAppContextSetup(ctx).build();
+}
+
+@Test
+public void testList() throws Exception{
+	log.info(mockMvc.perform(MockMvcRequestBuilders.get("/board/list"))
+			.andReturn().getModelAndView().getModelMap());
+	
+}
+	
+}
+
+**17. BoardController 클래스에 아래 추가
+@PostMapping("/register")
+public String register(BoardVO vo, RedirectAttributes rttr) {
+	log.info("register : " + vo);
+	service.register(vo);
+	rttr.addFlashAttribute("result", vo.getBno());
+	return "redirect:/board/list";
+}
+
+**18. BoardControllerTests 클래스에 아래 추가    // 서버를 돌리지 않아도 간단히 테스트를 확인할 수 있는 test~
+@Test
+public void testRegister() throws Exception{
+	String resultPage =
+			mockMvc.perform(MockMvcRequestBuilders.post("/board/register")
+			.param("title", "돈가스")
+			.param("content", "왕돈가스")
+			.param("writer", "치즈돈가스")
+			).andReturn().getModelAndView().getViewName();
+	log.info(resultPage);
+}
 
 
+**19. BoardController 클래스에 아래 추가  // 게시글 하나 가져오기
+@GetMapping("get")
+public void get(Long bno, Model model) {
+	log.info("get -------------------- ");
+	model.addAttribute("board", service.get(bno));
+}
+
+**20. BoardControllerTests 클래스에 아래 추가 // 게시글 하나 가져오는지 확인
+@Test
+public void testGet() throws Exception{
+	log.info(mockMvc.perform(MockMvcRequestBuilders.get("/board/get")
+			.param("bno", "11"))
+			.andReturn().getModelAndView().getModelMap());
+}
+
+**21. BoardController 클래스에 아래 추가  // 게시글 하나 삭제하기
+@PostMapping("/remove")
+public String remove(Long bno, RedirectAttributes rttr) {
+	log.info("remove : " + bno);
+	if(service.remove(bno) == 1) {
+		rttr.addFlashAttribute("result", "success");
+	}
+	return "redirect:/board/list";
+}
+
+**22. BoardControllerTests 클래스에 아래 추가 // 게시글 하나 삭제하는 지 확인
+@Test
+public void testRemove() throws Exception{
+	String resultPage =
+			mockMvc.perform(MockMvcRequestBuilders.post("/board/remove")
+			.param("bno", "11")
+			).andReturn().getModelAndView().getViewName();
+	log.info(resultPage);
+}
+
+**23. BoardController 클래스에 아래 추가  // 게시글 하나 수정하기
+@PostMapping("/modify")
+public String modify(BoardVO vo, RedirectAttributes rttr) {
+	log.info("modify : " + vo);
+	if(service.modify(vo) == 1) {
+		rttr.addFlashAttribute("result", "success");
+	}
+	return "redirect:/board/list";
+}
 
 
+**24. BoardControllerTests 클래스에 아래 추가 // 게시글 하나 수정하는 확인
+@Test
+public void testModify() throws Exception{
+	String resultPage =
+			mockMvc.perform(MockMvcRequestBuilders.post("/board/modify")
+			.param("bno", "15")
+			.param("title", "java")
+			.param("content", "자바의정석")
+			.param("writer", "남궁성")
+			).andReturn().getModelAndView().getViewName();
+	log.info(resultPage);
+}
 
 
-
-
+**25. 
 
 
 
