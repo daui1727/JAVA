@@ -57,6 +57,8 @@ C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4008603857.index
 \BoardWeb\src\main\java
 C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1206470954.index
 \ex02\src\main\java
+C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3816523643.index
+\ex0714\src\main\java
 C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1838807468.index
 \BoardJspA\src\main\java
 C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3012140731.index
@@ -157,6 +159,8 @@ C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3938559505.index
 \EzenEx02\src\main\java
 C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\733826561.index
 \ex03\src\main\java
+C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1895964840.index
+\ex0714\src\main\java
 C:\Work2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1524658155.index
 \bookShop01\src\main\java
 C:\Work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\219853942.index

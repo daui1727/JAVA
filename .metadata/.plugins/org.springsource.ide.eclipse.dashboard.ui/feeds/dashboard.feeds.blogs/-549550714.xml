@@ -5,7 +5,21 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-07-12T11:00:00Z</updated>
+  <updated>2022-07-13T07:00:00Z</updated>
+  <entry>
+    <title>Spring Native 0.12.1 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/07/13/spring-native-0-12-1-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>S?bastien Deleuze</name>
+    </author>
+    <id>tag:spring.io,2022-07-13:4851</id>
+    <updated>2022-07-13T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Native &lt;code&gt;0.12.1&lt;/code&gt; has been released and is now available from &lt;a href="https://repo.spring.io/release"&gt;https://repo.spring.io/release&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects-experimental/spring-native/releases/tag/0.12.1"&gt;15 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt; to Spring Boot 2.7.1 and Native Build Tools 0.9.13. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-native"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects-experimental/spring-native/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-native/docs/0.12.1/reference/htmlsingle/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - July 12th, 2022</title>
     <link rel="alternate" href="https://spring.io/blog/2022/07/12/this-week-in-spring-july-12th-2022" />
@@ -672,19 +686,6 @@ dependencyManagement {&#xD;
 &lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2022-06-17-4151-release-incl-language-servers-version-1360"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2022-06-17-4151-release-incl-language-servers-version-1360&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Spring Tools 4.15.2 is scheduled to be released in early August 2022.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Bootiful Podcast: Spring Framework contributor S?bastien Deleuze on GraalVM, AOT, project Leyden, and WebAssembly</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/06/16/bootiful-podcast-spring-framework-contributor-s-bastien-deleuze-on-graalvm-aot-project-leyden-and-webassembly" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-06-16:4831</id>
-    <updated>2022-06-16T07:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Spring Framework contributor &lt;a href="https://twitter.com/sdeleuze"&gt;S?bastien Deleuze (@sdeleuze)&lt;/a&gt; on GraalVM, AOT, project Leyden, and WebAssembly.&lt;/p&gt;
-&lt;iframe title="Spring Framework contributor S?bastien Deleuze on GraalVM, AOT, project Leyden, and WebAssembly" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=9snuh-125088e-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
