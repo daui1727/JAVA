@@ -1,4 +1,4 @@
-!SESSION 2022-07-14 09:24:48.031 -----------------------------------------------
+!SESSION 2022-07-18 09:20:45.082 -----------------------------------------------
 eclipse.buildId=3.9.17.202106211233-RELEASE-e420
 java.version=11.0.2
 java.vendor=Oracle Corporation
@@ -7,549 +7,147 @@ Framework arguments:  -product org.springsource.sts.ide
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
 
 This is a continuation of log file C:\Work2\.metadata\.bak_1.log
-Created Time: 2022-07-14 16:21:00.586
+Created Time: 2022-07-18 17:55:11.715
 
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:21:00.586
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!ENTRY org.eclipse.ui 4 4 2022-07-18 17:55:11.715
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.cut: {ActionHandler(org.eclipse.ui.texteditor.TextNavigationAction@71334059)} vs {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@4e746adb)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
 !STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.TextNavigationAction@71334059),  for 'org.eclipse.ui.edit.cut',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@8a29ed), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@4e746adb),  for 'org.eclipse.ui.edit.cut',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@8a29ed), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
 	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
 	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
 	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
 	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
 	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setText(Action.java:615)
-	at org.eclipse.ui.internal.editors.quickdiff.RevertLineAction.computeEnablement(RevertLineAction.java:62)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:98)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:21:02.434
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:21:02.435
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:21:10.505
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:98)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:21:10.505
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:71)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:21:11.095
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:21:11.097
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:23:34.111
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.texteditor.TextEditorAction.update(TextEditorAction.java:99)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:96)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-07-14 16:25:19.932
-!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on peer not authenticated. Retry attempt 0 started
-!STACK 0
-javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
-	at java.base/sun.security.ssl.SSLSessionImpl.getPeerCertificates(SSLSessionImpl.java:526)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:504)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:26:23.096
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:26:23.098
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:26:40.910
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:26:40.913
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:27:18.177
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:27:18.180
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:28:16.032
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:28:16.033
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:28:36.473
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:28:36.474
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:29:15.473
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:29:15.474
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:29:24.801
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:29:24.802
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:30:10.885
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:30:10.890
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:30:58.620
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:30:58.621
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:31:05.480
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:31:05.481
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:32:06.867
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:32:06.870
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:33:07.076
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:33:07.078
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:33:49.364
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.texteditor.TextEditorAction.update(TextEditorAction.java:99)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:96)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:33:54.979
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:71)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:01.974
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:01.976
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:34:07.379
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setText(Action.java:615)
-	at org.eclipse.ui.internal.editors.quickdiff.RevertLineAction.computeEnablement(RevertLineAction.java:62)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:98)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:34:07.380
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setText(Action.java:615)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:74)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:08.002
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:08.004
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:34:11.219
-!MESSAGE Conflicting handlers for org.eclipse.ui.edit.text.shiftLeft: {ActionHandler(org.eclipse.ui.texteditor.ShiftAction@54fe7b8e)} vs {ActionHandler(org.eclipse.ui.texteditor.ShiftAction@54fe7b8e)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.ShiftAction@54fe7b8e),  for 'org.eclipse.ui.edit.text.shiftLeft',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.ShiftAction@54fe7b8e),  for 'org.eclipse.ui.edit.text.shiftLeft',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.WorkbenchHandlerServiceHandler.updateElement(WorkbenchHandlerServiceHandler.java:43)
-	at org.eclipse.ui.internal.commands.CommandService.registerElement(CommandService.java:313)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElement(SlaveCommandService.java:239)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElementForCommand(SlaveCommandService.java:231)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElementForUpdate(SlaveCommandService.java:285)
-	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.postMenuFill(HandledContributionItem.java:198)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:266)
-	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
-	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:75)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:916)
+	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:531)
+	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:484)
+	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:477)
+	at org.eclipse.ui.menus.CommandContributionItem.lambda$0(CommandContributionItem.java:935)
+	at org.eclipse.jface.bindings.BindingManager.fireBindingManagerChanged(BindingManager.java:903)
+	at org.eclipse.jface.bindings.BindingManager.setActiveBindings(BindingManager.java:2183)
+	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1744)
+	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:693)
+	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:164)
+	at org.eclipse.core.commands.contexts.ContextManager.setEventCaching(ContextManager.java:323)
+	at org.eclipse.core.commands.contexts.ContextManager.deferUpdates(ContextManager.java:85)
+	at org.eclipse.ui.internal.contexts.ContextService.deferUpdates(ContextService.java:91)
+	at org.eclipse.ui.internal.contexts.ContextService.deactivateContexts(ContextService.java:203)
+	at org.eclipse.ui.internal.contexts.SlaveContextService.dispose(SlaveContextService.java:197)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:344)
+	at org.eclipse.ui.internal.EditorSite.dispose(EditorSite.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.disposeSite(CompatibilityEditor.java:140)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
+	at jdk.internal.reflect.GeneratedMethodAccessor236.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
-	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
-	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:105)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:191)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:202)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:866)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:964)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:201)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:951)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2087)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1719)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1091)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1716)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1752)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1067)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4762)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4861)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4861)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
@@ -572,101 +170,143 @@ java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclip
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
 
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:34:11.220
-!MESSAGE Conflicting handlers for org.eclipse.ui.edit.text.shiftRight: {ActionHandler(org.eclipse.ui.texteditor.ShiftAction@28e12c6)} vs {ActionHandler(org.eclipse.ui.texteditor.ShiftAction@28e12c6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!ENTRY org.eclipse.ui 4 4 2022-07-18 17:55:11.717
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.eclipse.ui.texteditor.TextNavigationAction@7527d1d7)} vs {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@7452c3ff)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
 !STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.ShiftAction@28e12c6),  for 'org.eclipse.ui.edit.text.shiftRight',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.ShiftAction@28e12c6),  for 'org.eclipse.ui.edit.text.shiftRight',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.TextNavigationAction@7527d1d7),  for 'org.eclipse.ui.edit.copy',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@8a29ed), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@7452c3ff),  for 'org.eclipse.ui.edit.copy',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@8a29ed), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
 	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
 	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
 	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
 	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
 	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.WorkbenchHandlerServiceHandler.updateElement(WorkbenchHandlerServiceHandler.java:43)
-	at org.eclipse.ui.internal.commands.CommandService.registerElement(CommandService.java:313)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElement(SlaveCommandService.java:239)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElementForCommand(SlaveCommandService.java:231)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElementForUpdate(SlaveCommandService.java:285)
-	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.postMenuFill(HandledContributionItem.java:198)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:266)
-	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
-	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:75)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:916)
+	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:531)
+	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:484)
+	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:477)
+	at org.eclipse.ui.menus.CommandContributionItem.lambda$0(CommandContributionItem.java:935)
+	at org.eclipse.jface.bindings.BindingManager.fireBindingManagerChanged(BindingManager.java:903)
+	at org.eclipse.jface.bindings.BindingManager.setActiveBindings(BindingManager.java:2183)
+	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1744)
+	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:693)
+	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:164)
+	at org.eclipse.core.commands.contexts.ContextManager.setEventCaching(ContextManager.java:323)
+	at org.eclipse.core.commands.contexts.ContextManager.deferUpdates(ContextManager.java:85)
+	at org.eclipse.ui.internal.contexts.ContextService.deferUpdates(ContextService.java:91)
+	at org.eclipse.ui.internal.contexts.ContextService.deactivateContexts(ContextService.java:203)
+	at org.eclipse.ui.internal.contexts.SlaveContextService.dispose(SlaveContextService.java:197)
+	at org.eclipse.ui.internal.PartSite.dispose(PartSite.java:344)
+	at org.eclipse.ui.internal.EditorSite.dispose(EditorSite.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.disposeSite(CompatibilityPart.java:443)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.disposeSite(CompatibilityEditor.java:140)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.internalDisposeSite(CompatibilityPart.java:434)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:272)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
+	at jdk.internal.reflect.GeneratedMethodAccessor236.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
-	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
-	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:105)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:191)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:202)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:866)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:34:13.648
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setText(Action.java:615)
-	at org.eclipse.ui.internal.editors.quickdiff.RevertLineAction.computeEnablement(RevertLineAction.java:60)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:98)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:964)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:201)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:951)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:904)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:849)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2087)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1719)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1091)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1716)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1752)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1067)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4762)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4861)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4861)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
 	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
@@ -690,847 +330,3 @@ java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclip
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:34:13.649
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setText(Action.java:615)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:74)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:16.042
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:16.044
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:34:22.909
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:98)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:34:22.910
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:71)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:27.335
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:27.336
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:30.088
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:30.090
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:34.087
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:34:34.089
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:36:51.788
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:36:51.791
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:37:35.084
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:37:35.088
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:37:59.157
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:37:59.161
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:38:14.468
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:38:14.478
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:38:27.599
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:38:27.603
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:38:32.186
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:38:32.188
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:39:01.122
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:39:01.126
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:39:41.731
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:39:41.732
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:40:01.048
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:40:01.049
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:40:04.326
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:40:04.327
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:40:11.419
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:40:11.421
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:40:46.464
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:40:46.465
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:41:58.379
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.texteditor.TextEditorAction.update(TextEditorAction.java:99)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:96)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:00.800
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:71)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:42:11.877
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:42:11.879
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:18.412
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setText(Action.java:615)
-	at org.eclipse.ui.internal.editors.quickdiff.RevertLineAction.computeEnablement(RevertLineAction.java:62)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:98)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:18.413
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setText(Action.java:615)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:74)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:22.706
-!MESSAGE Conflicting handlers for org.eclipse.ui.edit.text.shiftLeft: {ActionHandler(org.eclipse.ui.texteditor.ShiftAction@54fe7b8e)} vs {ActionHandler(org.eclipse.ui.texteditor.ShiftAction@54fe7b8e)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.ShiftAction@54fe7b8e),  for 'org.eclipse.ui.edit.text.shiftLeft',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.ShiftAction@54fe7b8e),  for 'org.eclipse.ui.edit.text.shiftLeft',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.WorkbenchHandlerServiceHandler.updateElement(WorkbenchHandlerServiceHandler.java:43)
-	at org.eclipse.ui.internal.commands.CommandService.registerElement(CommandService.java:313)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElement(SlaveCommandService.java:239)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElementForCommand(SlaveCommandService.java:231)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElementForUpdate(SlaveCommandService.java:285)
-	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.postMenuFill(HandledContributionItem.java:198)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:266)
-	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
-	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
-	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
-	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:105)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:191)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:202)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:866)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:22.708
-!MESSAGE Conflicting handlers for org.eclipse.ui.edit.text.shiftRight: {ActionHandler(org.eclipse.ui.texteditor.ShiftAction@28e12c6)} vs {ActionHandler(org.eclipse.ui.texteditor.ShiftAction@28e12c6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.ShiftAction@28e12c6),  for 'org.eclipse.ui.edit.text.shiftRight',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.ShiftAction@28e12c6),  for 'org.eclipse.ui.edit.text.shiftRight',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.WorkbenchHandlerServiceHandler.updateElement(WorkbenchHandlerServiceHandler.java:43)
-	at org.eclipse.ui.internal.commands.CommandService.registerElement(CommandService.java:313)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElement(SlaveCommandService.java:239)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElementForCommand(SlaveCommandService.java:231)
-	at org.eclipse.ui.internal.commands.SlaveCommandService.registerElementForUpdate(SlaveCommandService.java:285)
-	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.postMenuFill(HandledContributionItem.java:198)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:266)
-	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicVisible(MenuManagerRenderer.java:213)
-	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
-	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
-	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:105)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:191)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:202)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:866)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:25.567
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setText(Action.java:615)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:74)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:27.458
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:98)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:34.692
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revertLine: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@413eb0a6),  for 'org.eclipse.ui.editors.quickdiff.revertLine',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.texteditor.TextEditorAction.update(TextEditorAction.java:99)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.update(QuickDiffRestoreAction.java:96)
-	at org.eclipse.ui.internal.editors.quickdiff.QuickDiffRestoreAction.selectionChanged(QuickDiffRestoreAction.java:103)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.ui 4 4 2022-07-14 16:42:37.004
-!MESSAGE Conflicting handlers for org.eclipse.ui.editors.quickdiff.revert: {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} vs {ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-!STACK 0
-java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction@1566b0b),  for 'org.eclipse.ui.editors.quickdiff.revert',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@ea6711), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
-	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:250)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
-	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
-	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.update(CompositeRevertAction.java:71)
-	at org.eclipse.ui.internal.editors.quickdiff.CompositeRevertAction.selectionChanged(CompositeRevertAction.java:80)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2638)
-	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2585)
-	at org.eclipse.jface.text.TextViewer$2.run(TextViewer.java:2564)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:42:41.235
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:42:41.236
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:42:44.634
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:42:44.636
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:47:14.348
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:47:14.351
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:47:28.068
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:47:28.071
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:47:30.173
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:47:30.177
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:49:16.023
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:49:16.027
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:49:39.816
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:49:39.821
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:50:53.418
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:50:53.420
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:51:33.623
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:51:33.624
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:51:43.473
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:51:43.474
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:52:02.305
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-14 16:52:02.306
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-07-14 17:25:20.433
-!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on peer not authenticated. Retry attempt 0 started
-!STACK 0
-javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
-	at java.base/sun.security.ssl.SSLSessionImpl.getPeerCertificates(SSLSessionImpl.java:526)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:504)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

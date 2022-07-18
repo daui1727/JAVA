@@ -141,7 +141,7 @@
 
 				
 				
-			<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ex0714" path="" reloadable="true" source="org.eclipse.jst.jee.server:ex0714"/></Host>
+			<Context docBase="C:\Work2\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ex0718" path="" reloadable="true" source="org.eclipse.jst.jee.server:ex0718"/></Host>
 		</Engine>
 	</Service>
 </Server>

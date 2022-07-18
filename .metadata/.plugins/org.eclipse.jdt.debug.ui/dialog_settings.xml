@@ -8,7 +8,7 @@
 	</section>
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=ex00/C:\/Users\/165\/.m2\/repository\/com\/oracle\/database\/jdbc\/ojdbc8\/21.6.0.0.1\/ojdbc8-21.6.0.0.1.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.archivename=/ojdbc8-21.6.0.0.1.jar=/=/maven.groupId=/com.oracle.database.jdbc=/=/maven.artifactId=/ojdbc8=/=/maven.version=/21.6.0.0.1=/=/maven.scope=/compile=/&amp;lt;oracle.jdbc.driver(JavaToJavaConverter$188.class[&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
 		<section name="DialogBoundsSettings">
 			<item key="DIALOG_HEIGHT" value="500"/>
 			<item key="DIALOG_WIDTH" value="600"/>

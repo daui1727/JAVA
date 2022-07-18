@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.springbook.view.board.UpdateBoardController"/>
-    <fullyQualifiedTypeName name="com.springbook.view.board.DeleteBoardController"/>
     <fullyQualifiedTypeName name="com.springbook.view.controller.Controller"/>
     <fullyQualifiedTypeName name="com.springbook.view.user.LogoutController"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
@@ -56,8 +54,10 @@
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.zerock.mapper.BoardMapper"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.ToString"/>
+    <fullyQualifiedTypeName name="org.zerock.domain.Criteria"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.zerock.domain.BoardVO"/>
 </qualifiedTypeNameHistroy>
