@@ -108,6 +108,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\165\Desktop\당근마켓크롤링"/>
+			<item value="C:\Users\165\Desktop\데이터수집"/>
+			<item value="C:\Work2\당근마켓크롤링"/>
 			<item value="C:\Work"/>
 		</list>
 	</section>
@@ -118,6 +121,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\165\Desktop\OEMarket"/>
+			<item value="C:\Users\165\Desktop\Team-Project\OEMarketProject"/>
 			<item value="C:\Users\165\Desktop\ex0714"/>
 			<item value="C:\Users\165\Desktop\ex0718"/>
 			<item value="C:\Users\165\Desktop\bookShop01"/>

@@ -1342,18 +1342,135 @@ public List<BoardVO> getListWithPagging(Criteria cri);
 
 
 
+*******************************************************
+0719 - 수업
+
+**78. BoardService.java 클래스를 다음과 같이 수정
+public List<BoardVO> getList(Criteria cri);
+
+
+**79. BoardServiceImpl.java 클래스도 다음과 같이 수정
+@Override
+public List<BoardVO> getList(Criteria cri) {
+  return mapper.getListWithPagging(cri);
+}
 
 
 
+**80. src/test/java의 BoardServiceTests.java 클래스를 다음과 같이 수정
+@Test
+public void testGetList() {
+// service.getList();
+   service.getList(new Criteria(2,10));
+   log.info("--------------------------");
+}
+
+여기까지 했을 때 테스트 실행을 하면 콘솔에 나타나긴 한다. 
+이 후 화면에 뿌리는 작업 진행.
+
+**81. BoardController.java 클래스를 다음과 같이 수정
+@GetMapping("/list")
+public void list(Criteria cri, Model model) {
+	log.info("list------------------");
+	model.addAttribute("list", service.getList(cri));
+}
+
+**82. src/test/java의 BoardControllerTests.java 클래스에 아래 추가
+@Test
+public void testListPaging() throws Exception {
+	log.info(
+			mockMvc.perform(MockMvcRequestBuilders.get("/board/list")
+			.param("pageNum", "5")
+			.param("amount", "30"))
+			.andReturn()
+			.getModelAndView()
+			.getModelMap()
+			);
+}
+
+실행하면 30개의 데이터가 나타난다.
+
+**83. org.zerock.domain에 PageDTO.java 클래스 작성
+@Getter
+@ToString
+public class PageDTO {
+	
+	private int startPage;
+	private int endPage;
+	private boolean prev, next;
+	private int total;
+	private Criteria cri;
+	
+	public PageDTO(Criteria cri, int total) {
+		this.cri = cri;
+		this.total = total;
+		
+		this.endPage = (int)(Math.ceil(cri.getPageNum()/10.0)) * 10;
+		this.startPage = endPage-9;
+		
+		
+		int readEnd = (int)(Math.ceil(total*1.0)/cri.getAmount());
+		
+		if(endPage > readEnd) {
+			endPage = readEnd;
+		}
+		
+		this.prev = this.startPage > 1;
+		this.next = this.endPage < readEnd;
+		
+	}
+	
+}
+
+**84. src/test/java의 BoardMapperTests.java 클래스에 아래 테스트
+@Test
+public void testPageDTO() {
+	Criteria cri = new Criteria();
+	cri.setPageNum(15);
+	cri.setAmount(10);
+	PageDTO pageDTO = new PageDTO(cri,315);
+	log.info(pageDTO);
+}
+
+**85. BoardController.java에 아래처럼 수정
+@GetMapping("/list")
+	public void list(Criteria cri, Model model) {
+		log.info("list------------------");
+		model.addAttribute("list", service.getList(cri));
+		model.addAttribute("pageMaker", new PageDTO(cri, 315));
+	}
+	
+**86. list.jsp에 아래 추가 </table> 아래에
+<!-- 페이지 처리 Start -->
+<div class="pull-right">
+  <ul class="pagination">
+  
+  	<c:if test="${pageMaker.prev}">
+	    <li class="paginate_button previous"><a href="${pageMaker.startPage-1}">Previous</a></li>				  		
+  	</c:if>
+  	
+  	<c:forEach var="num" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
+    	<li class="page-button ${pageMaker.cri.pageNum == num ? "active":""}">
+    	<a href="${num}">${num}</a></li>
+	</c:forEach>
+					    
+    <c:if test="${pageMaker.next}">
+	    <li class="paginate_button next"><a href="${pageMaker.endPage+1}">Next</a></li>				  		
+  	</c:if>
+  </ul>
+</div>
+<!-- //페이지 처리 End -->
+
+이 시점에 실행하면 크롬 화면에 에러는 나지만 주소창에 페이징 버튼을 눌렀을때 값이 넘어가는 것이 나타난다.
 
 
+**87. <!-- //페이지 처리 End --> 아래에 다음 추가
+<form id="actionForm" action="/board/list" method="get">
+	<input type="hidden" name="pageNum" value="${pageMaker.cri.pageNum}">
+	<input type="hidden" name="amount" value="${pageMaker.cri.amount}">
+</form>
 
-
-
-
-
-
-
+**88. script에
 
 
 

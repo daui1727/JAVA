@@ -141,7 +141,7 @@
 
 				
 				
-			<Context docBase="ex0718" path="/" reloadable="true" source="org.eclipse.jst.jee.server:ex0718"/></Host>
+			<Context docBase="OEMarketProject" path="/" reloadable="true" source="org.eclipse.jst.jee.server:OEMarketProject"/></Host>
 		</Engine>
 	</Service>
 </Server>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.oe.mapper.CrawlingMapper">
+    <select id="getList" resultType="com.oe.domain.DGVO">
+        select * from crawlingTest where no > 0
+    </select>
+ 
+	<select id="read" resultType="com.oe.domain.DGVO">
+	  	select * from crawlingTest where no = #{no}
+	</select>
+	
+	<insert id="insert">
+  		insert into crawlingTest(no, title, content, poster, address, heart, price)
+  		 values(seq_crawling.nextval, #{title}, #{content}, #{poster}, #{address}, #{heart}, #{price})
+  	</insert>
+</mapper>

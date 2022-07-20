@@ -1,6 +1,8 @@
 package org.zerock.mapper;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.zerock.domain.BoardVO;
 import org.zerock.domain.Criteria;
+import org.zerock.domain.PageDTO;
 
 import lombok.extern.log4j.Log4j;
 
@@ -68,6 +71,29 @@ public class BoardMapperTests {
 		cri.setPageNum(5);
 		cri.setAmount(10);
 		List<BoardVO> list = mapper.getListWithPagging(cri);
+		log.info(list);
+	}
+	
+	@Test
+	public void testPageDTO() {
+		Criteria cri = new Criteria();
+		cri.setPageNum(15);
+		cri.setAmount(10);
+		PageDTO pageDTO = new PageDTO(cri,315);
+		log.info(pageDTO);
+	}
+	
+	@Test
+	public void testSearchTest() {
+		Map<String, String> map = new HashMap<>();
+		map.put("T", "2");
+		map.put("C", "3");
+		map.put("W", "2");
+		
+		Map<String, Map<String, String>> outer = new HashMap<>();
+		
+		outer.put("map", map);
+		List<BoardVO> list = mapper.searchTest(outer);
 		log.info(list);
 	}
 	

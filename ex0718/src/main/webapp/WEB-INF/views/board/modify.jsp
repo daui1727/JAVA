@@ -21,6 +21,9 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
 	                        <form action="/board/modify" method="post" role="form">
+	                        	<input type="hidden" name="pageNum" value='<c:out value="${cri.pageNum}"/>'>
+								<input type="hidden" name="amount" value='<c:out value="${cri.amount}"/>'>
+	                        
 								<div class="form-group">
 									<label>Bno</label>
 									<input name="bno" class="form-control" readonly="readonly" value='<c:out value="${board.bno}"/>'><br>
@@ -77,7 +80,11 @@
 					}else if(operation === 'list'){
 						//self.location = "/board/list";
 						formObj.attr("action", "/board/list").attr("method","get");
+						var pageNumTag = $("input[name='pageNum']").clone();   // 복제
+						var amountTag = $("input[name='amount']").clone();	// 여기서 담아뒀다가
 						formObj.empty();
+						formObj.append(pageNumTag); // 나중에 추가하겠다.
+						formObj.append(amountTag);
 					}
 					formObj.submit();
             	});           		

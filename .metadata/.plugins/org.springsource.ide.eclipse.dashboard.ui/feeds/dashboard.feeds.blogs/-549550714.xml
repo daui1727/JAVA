@@ -5,19 +5,89 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-07-17T19:00:00Z</updated>
+  <updated>2022-07-20T07:00:00Z</updated>
   <entry>
     <title>Spring Tips: Kubernetes Native Java (Redux, 2022)</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/07/17/spring-tips-kubernetes-native-java-redux-2022" />
+    <link rel="alternate" href="https://spring.io/blog/2022/07/20/spring-tips-kubernetes-native-java-redux-2022" />
     <category term="engineering" label="Engineering" />
     <author>
       <name>Josh Long</name>
     </author>
     <id>tag:spring.io,2022-07-17:4855</id>
-    <updated>2022-07-17T19:00:00Z</updated>
+    <updated>2022-07-20T07:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, Josh Long (@starbuxman) looks at some of the amazing opportunities for building Spring Boot applications intended for production in Kubernetes in mid 2022. &lt;/p&gt;
 &lt;p&gt;The code, as usual, &lt;a href="https://github.com/spring-tips/kubernetes-native-java-redux-2022-07"&gt;is available on the &lt;code&gt;spring-tips&lt;/code&gt; Github organization&lt;/a&gt;&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Xe7K1biKcs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - July 19th, 2022</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/07/19/this-week-in-spring-july-19th-2022" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-07-19:4857</id>
+    <updated>2022-07-19T10:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m trying to wind down some threads and take some vacation with my family. It&amp;rsquo;s going to be an amazing time, indeed! But that doesn&amp;rsquo;t stop the deluge of novelties and news in the wide world of Springdom, so we&amp;rsquo;ve got a lot to cover this week. Let&amp;rsquo;s get to it!&lt;/p&gt;
+&lt;p&gt;Before I go, though, I have a &lt;a href="https://twitter.com/SpringTipsLive"&gt;new &amp;ldquo;Spring Tips&amp;rdquo;&lt;/a&gt; episode &lt;a href="https://bit.ly/spring-tips-playlist"&gt;dropping Wednesday&lt;/a&gt; morning, at midnight, so be on the look out :) &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/07/14/a-bootiful-podcast-nate-schutta-the-thinking-person-s-architect-my-friend-and-teammate"&gt;A Bootiful Podcast: Nate Schutta: The Thinking Person&amp;rsquo;s Architect, My Friend, and Teammate&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://kubernetes.io/blog/2022/07/13/gateway-api-graduates-to-beta/"&gt;Blog: Kubernetes Gateway API Graduates to Beta&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://medium.com/geekculture/jwt-authentication-with-oauth2-resource-server-and-an-external-authorization-server-2b8fd1524fc8"&gt;JWT Authentication with OAuth2 Resource Server and an external Authorization Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://proandroiddev.com/kotlin-spring-boot-building-a-rest-api-29598d39a392?gi=4051b9bdb8a6"&gt;Kotlin &amp;amp; Spring Boot: Building a Rest API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/toedter/spring-hateoas-jsonapi/releases/tag/v1.5.1"&gt;Release v1.5.1 ¡¤ toedter/spring-hateoas-jsonapi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/702999536/0/baeldung~Spring-Boot-Keycloak-Integration-Testing-with-Testcontainers"&gt;Spring Boot ? Keycloak Integration Testing with Testcontainers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/702736446/0/baeldung~Spring-Boot-Testing-Redis-With-Testcontainers"&gt;Spring Boot ? Testing Redis With Testcontainers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/07/15/spring-data-2022-0-0-m5-2021-2-2-and-2021-1-6-released"&gt;Spring Data 2022.0.0-M5 2021.2.2 and 2021.1.6 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/702999532/0/baeldung~Spring-Data-Rest-Serializing-the-Entity-ID"&gt;Spring Data Rest ? Serializing the Entity ID&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/07/14/spring-framework-6-0-0-m5-and-5-3-22-available-now"&gt;Spring Framework 6.0.0-M5 and 5.3.22 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/07/13/spring-native-0-12-1-available-now"&gt;Spring Native 0.12.1 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/07/18/spring-security-5-8-0-m1-and-6-0-0-m6-are-released"&gt;Spring Security 5.8.0-M1 and 6.0.0-M6 are released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/07/17/spring-tips-kubernetes-native-java-redux-2022"&gt;Spring Tips: Kubernetes Native Java (Redux, 2022)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security 5.8.0-M1 and 6.0.0-M6 are released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/07/18/spring-security-5-8-0-m1-and-6-0-0-m6-are-released" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Cummings</name>
+    </author>
+    <id>tag:spring.io,2022-07-18:4856</id>
+    <updated>2022-07-18T19:00:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Security &lt;code&gt;5.8.0-M1&lt;/code&gt; and &lt;code&gt;6.0.0-M6&lt;/code&gt; are available now.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This release includes dependency upgrades, bug fixes, and enhancements. Here are a few noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/10913"&gt;Deferred SecurityContext lookup&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/10973"&gt;SecurityContextHolderStrategy Bean lookup&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/9290"&gt;AuthorizationManager support&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8549"&gt;SHA-256 RememberMe support&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/10451"&gt;Release automation improvements&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.8.0-M1"&gt;5.8.0-M1&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/6.0.0-M6"&gt;6.0.0-M6&lt;/a&gt; release notes for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-security/reference/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
   <entry>
@@ -170,12 +240,12 @@
       <name>Gary Russell</name>
     </author>
     <id>tag:spring.io,2022-07-07:4848</id>
-    <updated>2022-07-07T16:18:55Z</updated>
+    <updated>2022-07-07T16:18:00Z</updated>
     <content type="html">&lt;div class="paragraph"&gt;
 &lt;p&gt;I am pleased to announce that the release candidate Spring for Apache Kafka 2.9.0 is now available (2.9.0-RC1) in the &lt;a href="https://repo.spring.io/milestone"&gt;Spring Milestone Repo&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;This version is not provided by Spring Boot dependency management, but it can be used with Boot 2.7, as long as you override the Kafka dependencies as described in &lt;a href="https://docs.spring.io/spring-kafka/docs/2.9.0-RC1/reference/html/#update-deps"&gt;this appendix&lt;/a&gt;, especially if you are using the embedded Kafka broker.&lt;/p&gt;
+&lt;p&gt;This version is not provided by Spring Boot dependency management, but it can be used with Boot 2.7 (or 2.6), as long as you override the Kafka dependencies as described in &lt;a href="https://docs.spring.io/spring-kafka/docs/2.9.0-RC1/reference/html/#update-deps"&gt;this appendix&lt;/a&gt;, especially if you are using the embedded Kafka broker.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="sect2"&gt;
 &lt;h3 id="notable-changes"&gt;&lt;a class="anchor" href="#notable-changes"&gt;&lt;/a&gt;Notable Changes&lt;/h3&gt;
@@ -572,57 +642,6 @@ dependencyManagement {&#xD;
 &lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.6.9"&gt;44 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.6.9/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - June 21st, 2022</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/06/21/this-week-in-spring-june-21st-2022" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-06-21:4837</id>
-    <updated>2022-06-21T07:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! How are you? It&amp;rsquo;s been a hot minute since we last chatted. I was in Germany this time last week. Now, I&amp;rsquo;m back in beautiful San Francisco. Today the weather will climb to a monumental 84 F! That&amp;rsquo;s very unusual, for any time of the year, here in San Francisco. Most places here in San Francisco don&amp;rsquo;t have air conditioning. Some have heating. I bought a brand new condo in 2014 and it didn&amp;rsquo;t have air conditioning. You just open the window. I am privileged enough that I have air conditioning today, of course. I mention all this to say that it&amp;rsquo;s &lt;em&gt;hot&lt;/em&gt; here! I worry for the elderly! When it gets this hot, the YMCA and other organizations typically invite elderly people to come in and get some cool air and water. It&amp;rsquo;s dangerous. Some days it gets even hotter. Very rare, but it does happen. I hope you&amp;rsquo;re all doing well. Take care of yourselves and each other, my friends. &lt;/p&gt;
-&lt;p&gt;And, speaking of being hot, let&amp;rsquo;s look at this week&amp;rsquo;s roundup of the latest-and-greatest that&amp;rsquo;s &lt;em&gt;hot&lt;/em&gt; off the press! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/16/bootiful-podcast-spring-framework-contributor-s-bastien-deleuze-on-graalvm-aot-project-leyden-and-webassembly"&gt;Bootiful Podcast: Spring Framework contributor S?bastien Deleuze on GraalVM, AOT, project Leyden, and WebAssembly&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/15/cve-report-published-for-spring-cloud-function"&gt;CVE report published for Spring Cloud Function&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://talktotheduck.dev/debugging-collections-streams-and-watch-renderers"&gt;Debugging Collections, Streams and Watch Renderers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699883384/0/baeldung~Difference-Between-Fluxcreate-and-Fluxgenerate"&gt;Difference Between Flux.create and Flux.generate&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699736092/0/baeldung~Handle-Spring-Security-Exceptions-With-ExceptionHandler"&gt;Handle Spring Security Exceptions With @ExceptionHandler&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699680972/0/baeldung~MongoDB-Composite-Key-With-Spring-Data"&gt;MongoDB Composite Key With Spring Data&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/20/spring-authorization-server-0-3-1-available-now"&gt;Spring Authorization Server 0.3.1 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Oydba8VHPZM"&gt;Monitoring Spring Boot applications using Spring Boot Admin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/20/spring-data-2021-2-1-and-2021-1-5-released"&gt;Spring Data 2021.2.1 and 2021.1.5 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699403142/0/baeldung~Spring-Data-JPA-Run-an-App-Without-a-Database"&gt;Spring Data JPA ? Run an App Without a Database&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/20/spring-data-mongodb-spel-expression-injection-vulnerability-cve-2022-22980"&gt;Spring Data MongoDB SpEL Expression Injection Vulnerability (CVE-2022-22980)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/15/spring-framework-5-3-21-available-now"&gt;Spring Framework 5.3.21 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/20/spring-security-5-7-2-and-5-6-6-available-now"&gt;Spring Security 5.7.2 and 5.6.6 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/15/spring-tools-4-15-0-released"&gt;Spring Tools 4.15.0 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/06/18/spring-tools-4-15-1-released"&gt;Spring Tools 4.15.1 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699680974/0/baeldung~What-are-the-Spring-Boot-Default-Memory-Settings"&gt;What are the Spring Boot Default Memory Settings?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699573478/0/baeldung~A-Guide-to-Docker-Private-Registry"&gt;A Guide to Docker Private Registry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/699263599/0/baeldung~Is-There-a-Destructor-in-Java"&gt;Is There a Destructor in Java?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 5.7.2 and 5.6.6 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/06/20/spring-security-5-7-2-and-5-6-6-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Joe Grandja</name>
-    </author>
-    <id>tag:spring.io,2022-06-20:4836</id>
-    <updated>2022-06-20T20:00:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Security 5.7.2 and 5.6.6 are available now.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can find more details about the respective releases &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.7.2"&gt;here&lt;/a&gt; and
- &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.6.6"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

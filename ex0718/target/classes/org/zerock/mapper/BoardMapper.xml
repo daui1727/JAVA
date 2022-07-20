@@ -47,5 +47,34 @@
       where rn > (#{pageNum}-1)*#{amount}
       ]]>
    </select>
+   
+   <select id="getTotalCount" resultType="int">
+   		select count(*) from tbl_board where bno > 0
+   </select>
+   
+   <!-- 검색 조건 -->
+   <select id="searchTest" resultType="org.zerock.domain.BoardVO">
+   	  <![CDATA[
+     	select * from tbl_board
+     	where
+     	]]>
+     	<trim suffix="and">
+     		<foreach collection="map" index="key" item="val" separator="or" open="(" close=")">
+     			<if test= "key == 'T'.toString()">
+     				title like #{val}
+     			</if>
+     			<if test= "key == 'C'.toString()">
+     				content like #{val}
+     			</if>
+     			<if test= "key == 'W'.toString()">
+     				writer like #{val}
+     			</if>
+     		</foreach>
+     	</trim>
+      <![CDATA[
+		rownum < 10
+     	 ]]>
+     	 
+    </select>
   
 </mapper>
